@@ -1,0 +1,14 @@
+objecttypes = {
+	pdxmesh = {
+		name = "leviathan_model_mesh"
+		file = "gfx\models\ships\leviathan\leviathan.mesh"
+		scale = 1
+	}
+
+	pdxmesh = {
+		name = "leviathan_weapons_mesh"
+		file = "gfx\models\ships\leviathan\leviathan_locators.mesh"
+		scale = 1
+	}
+
+}

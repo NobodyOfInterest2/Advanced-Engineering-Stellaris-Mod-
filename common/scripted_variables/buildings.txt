@@ -1,0 +1,52 @@
+##costs
+@adveng_t1_cost_minerals = 360
+@adveng_t2_cost_minerals = 720
+
+@adveng_t1_cost_nanites = 180
+@adveng_t2_cost_nanites = 360
+
+@adveng_t2_cost_living_metal = 360
+
+##upkeeps
+@adveng_t1_upkeep_energy = 4
+@adveng_t2_upkeep_energy = 8
+
+@adveng_t1_upkeep_minerals = 10
+@adveng_t2_upkeep_minerals = 20
+
+@adveng_t1_upkeep_food = 16
+@adveng_t2_upkeep_food = 32
+
+@adveng_t1_upkeep_CGs = 8
+@adveng_t2_upkeep_CGs = 16
+
+@adveng_t1_upkeep_energy_sr = 10
+@adveng_t2_upkeep_energy_sr = 15
+
+@adveng_t1_upkeep_minerals_sr = 10
+@adveng_t2_upkeep_minerals_sr = 15
+
+@adveng_upkeep_dark_matter_sr = 5
+@adveng_upkeep_nanites_sr = 5
+
+@adveng_t1_upkeep_dark_matter = 1
+@adveng_t2_upkeep_dark_matter = 2
+
+@adveng_t2_upkeep_zro = 1
+
+##build times
+@adveng_t1_build_time_simple = 270
+@adveng_t2_build_time_simple = 360
+
+@adveng_t1_build_time_complex = 360
+@adveng_t2_build_time_complex = 480
+
+##jobs counts
+##used both for actual jobs as well as automation
+@adveng_t1_job_count = 2
+@adveng_t2_job_count = 4
+
+@adveng_t1_bio_trophy_count = 15
+@adveng_t2_bio_trophy_count = 30
+
+##end variables

@@ -1,0 +1,4 @@
+produces = {
+	nanites = 1
+	multiplier = value:adveng_resource_automation|BASE|$base$|ECONOMIC_CATEGORY|refiners|RESOURCE|sr_nanites|COUNT|$count$|
+}

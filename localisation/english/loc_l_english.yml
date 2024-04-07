@@ -1,0 +1,335 @@
+﻿l_english:
+  ##Conventional Ship Sections
+  #Corvette
+  ADVENG_T1_CORVETTE_MID_INTERCEPTOR:0 "Interceptor"
+  ADVENG_T1_CORVETTE_MID_PICKET:0 "Picket Ship"
+
+  ADVENG_T2_CORVETTE_MID_INTERCEPTOR:0 "Interceptor"
+  ADVENG_T2_CORVETTE_MID_PICKET:0 "Picket Ship"
+
+  #Frigate
+  ADVENG_T1_CORVETTE_MID_FRIGATE:0 "Torpedo Boat"
+
+  ADVENG_T2_CORVETTE_MID_FRIGATE:0 "Torpedo Boat"
+
+  #Destroyer
+  ADVENG_T1_DESTROYER_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T1_DESTROYER_BOW_GUNSHIP:0 "Gunship Bow"
+  ADVENG_T1_DESTROYER_BOW_PICKET:0 "Picket Ship Bow"
+
+  ADVENG_T1_DESTROYER_STERN_GUNSHIP:0 "Gunship Stern"
+  ADVENG_T1_DESTROYER_STERN_INTERCEPTOR:0 "Interceptor Stern"
+  ADVENG_T1_DESTROYER_STERN_PICKET:0 "Picket Ship Stern"
+
+  ADVENG_T2_DESTROYER_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T2_DESTROYER_BOW_GUNSHIP:0 "Gunship Bow"
+  ADVENG_T2_DESTROYER_BOW_PICKET:0 "Picket Ship Bow"
+
+  ADVENG_T2_DESTROYER_STERN_GUNSHIP:0 "Gunship Stern"
+  ADVENG_T2_DESTROYER_STERN_INTERCEPTOR:0 "Interceptor Stern"
+  ADVENG_T2_DESTROYER_STERN_PICKET:0 "Picket Ship Stern"
+
+  #Cruiser
+  ADVENG_T1_CRUISER_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T1_CRUISER_BOW_BROADSIDE:0 "Broadside Bow"
+  ADVENG_T1_CRUISER_BOW_TORPEDO:0 "Torpedo Bow"
+
+  ADVENG_T1_CRUISER_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T1_CRUISER_MID_BROADSIDE:0 "Broadside Core"
+  ADVENG_T1_CRUISER_MID_HANGAR:0 "Hangar Core"
+  ADVENG_T1_CRUISER_MID_TORPEDO:0 "Torpedo Core"
+
+  ADVENG_T1_CRUISER_STERN_BROADSIDE:0 "Broadside Stern"
+  ADVENG_T1_CRUISER_STERN_GUNSHIP:0 "Gunship Stern"
+
+  ADVENG_T2_CRUISER_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T2_CRUISER_BOW_BROADSIDE:0 "Broadside Bow"
+  ADVENG_T2_CRUISER_BOW_TORPEDO:0 "Torpedo Bow"
+
+  ADVENG_T2_CRUISER_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T2_CRUISER_MID_BROADSIDE:0 "Broadside Core"
+  ADVENG_T2_CRUISER_MID_HANGAR:0 "Hangar Core"
+  ADVENG_T2_CRUISER_MID_TORPEDO:0 "Torpedo Core"
+
+  ADVENG_T2_CRUISER_STERN_BROADSIDE:0 "Broadside Stern"
+  ADVENG_T2_CRUISER_STERN_GUNSHIP:0 "Gunship Stern"
+
+  #Battleship
+  ADVENG_T1_BATTLESHIP_BOW_BROADSIDE:0 "Broadside Bow"
+  ADVENG_T1_BATTLESHIP_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T1_BATTLESHIP_BOW_CARRIER:0 "Hangar Bow"
+  ADVENG_T1_BATTLESHIP_BOW_SPINAL:0 "Spinal Mount Bow"
+
+  ADVENG_T1_BATTLESHIP_MID_BROADSIDE:0 "Broadside Core"
+  ADVENG_T1_BATTLESHIP_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T1_BATTLESHIP_MID_HANGAR:0 "Hangar Core"
+  ADVENG_T1_BATTLESHIP_MID_CARRIER:0 "Carrier Core"
+
+  ADVENG_T1_BATTLESHIP_STERN_ARTILLERY:0 "Artillery Stern"
+  ADVENG_T1_BATTLESHIP_STERN_BROADSIDE:0 "Broadside Stern"
+
+  ADVENG_T2_BATTLESHIP_BOW_BROADSIDE:0 "Broadside Bow"
+  ADVENG_T2_BATTLESHIP_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T2_BATTLESHIP_BOW_CARRIER:0 "Hangar Bow"
+  ADVENG_T2_BATTLESHIP_BOW_SPINAL:0 "Spinal Mount Bow"
+  ADVENG_T2_BATTLESHIP_BOW_BATTLECRUISER:0 "Battlecruiser Bow"
+
+  ADVENG_T2_BATTLESHIP_MID_BROADSIDE:0 "Broadside Core"
+  ADVENG_T2_BATTLESHIP_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T2_BATTLESHIP_MID_HANGAR:0 "Hangar Core"
+  ADVENG_T2_BATTLESHIP_MID_CARRIER:0 "Carrier Core"
+
+  ADVENG_T2_BATTLESHIP_STERN_ARTILLERY:0 "Artillery Stern"
+  ADVENG_T2_BATTLESHIP_STERN_BROADSIDE:0 "Broadside Stern"
+
+
+  #Titan
+  ADVENG_T1_TITAN_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T1_TITAN_BOW_HANGAR:0 "Carrier Bow"
+  ADVENG_T1_TITAN_BOW_TORPEDO:0 "Missile Bow"
+
+  ADVENG_T1_TITAN_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T1_TITAN_MID_HANGAR:0 "Carrier Core"
+  ADVENG_T1_TITAN_MID_TORPEDO:0 "Missile Core"
+
+  ADVENG_T1_TITAN_STERN_ARTILLERY:0 "Artillery Stern"
+  ADVENG_T1_TITAN_STERN_BROADSIDE:0 "Broadside Stern"
+  ADVENG_T1_TITAN_STERN_TORPEDO:0 "Missile Stern"
+
+  ADVENG_T2_TITAN_BOW_ARTILLERY:0 "Artillery Bow"
+  ADVENG_T2_TITAN_BOW_HANGAR:0 "Carrier Bow"
+  ADVENG_T2_TITAN_BOW_TORPEDO:0 "Missile Bow"
+
+  ADVENG_T2_TITAN_MID_ARTILLERY:0 "Artillery Core"
+  ADVENG_T2_TITAN_MID_HANGAR:0 "Carrier Core"
+  ADVENG_T2_TITAN_MID_TORPEDO:0 "Missile Core"
+
+  ADVENG_T2_TITAN_STERN_ARTILLERY:0 "Artillery Stern"
+  ADVENG_T2_TITAN_STERN_BROADSIDE:0 "Broadside Stern"
+  ADVENG_T2_TITAN_STERN_TORPEDO:0 "Missile Stern"
+
+  #Juggernaut
+  ADVENG_T1_CORE_JUGGERNAUT_SECTION_GENERIC:0 "Classic Juggernaut"
+  ADVENG_T1_CORE_JUGGERNAUT_SECTION_HANGAR:0 "Carrier Juggernaut"
+  ADVENG_T1_CORE_JUGGERNAUT_SECTION_ARTILLERY:0 "Artillery Juggernaut"
+
+  ADVENG_T2_CORE_JUGGERNAUT_SECTION_GENERIC:0 "Classic Juggernaut"
+  ADVENG_T2_CORE_JUGGERNAUT_SECTION_HANGAR:0 "Carrier Juggernaut"
+  ADVENG_T2_CORE_JUGGERNAUT_SECTION_ARTILLERY:0 "Artillery Juggernaut"
+
+  ##Tech Names
+  ##Prereqs
+  adveng_tech_darkmatter_power:0 "Planetside Dark Matter Infrastructure"
+  adveng_tech_darkmatter_power_desc:0 ""
+
+  adveng_tech_nanites:0 "Nano-Engineering"
+  adveng_tech_nanites_desc:0 ""
+
+  ##T1
+  adveng_tech_dark_matter_1:0 "Dark Matter Condensation"
+  adveng_tech_dark_matter_1_desc:0 ""
+
+  adveng_tech_nanites_1:0 "Nanite Fabrication"
+  adveng_tech_nanites_1_desc:0 ""
+
+  adveng_tech_energy_1:0 "Dark Matter Power Plants"
+  adveng_tech_energy_1_desc:0 ""
+
+  adveng_tech_minerals_1:0 "Mass Fabrication"
+  adveng_tech_minerals_1_desc:0 ""
+
+  adveng_tech_food_1:0 "Enhanced Bio-Processing"
+  adveng_tech_food_1_desc:0 ""
+
+  adveng_tech_alloys_1:0 "High-Energy Metallurgy"
+  adveng_tech_alloys_1_desc:0 ""
+
+  adveng_tech_cgs_1:0 "Civilian Mass Farication"
+  adveng_tech_cgs_1_desc:0 ""
+
+  adveng_tech_research_1:0 "Research Equipment Miniaturization"
+  adveng_tech_research_1_desc:0 ""
+
+  adveng_tech_housing_1:0 "Habitation Unit Automation"
+  adveng_tech_housing_1_desc:0 ""
+
+  adveng_tech_unity_1:0 "Dark Matter Signal Amplifiers"
+  adveng_tech_unity_1_desc:0 ""
+
+  adveng_tech_refinery_1:0 "Delicate Resource Replication"
+  adveng_tech_refinery_1_desc:0 ""
+
+  ##T2 prereqs
+  adveng_tech_living_metal_theory:0 "Picoscale Engineering"
+  adveng_tech_living_metal_theory_desc:0 ""
+
+  adveng_tech_zro_theory:0 "Applied Aetherophasics"
+  adveng_tech_zro_theory_desc:0 ""
+
+  ##T2
+  adveng_tech_zro:0 "Psychic Energy Condensation"
+  adveng_tech_zro_desc:0 ""
+
+  adveng_tech_living_metal:0 "Picoscale Assembly Lines"
+  adveng_tech_living_metal_desc:0 ""
+
+  adveng_tech_dark_matter_2:0 "Aetherophasic Inversion"
+  adveng_tech_dark_matter_2_desc:0 ""
+
+  adveng_tech_nanites_2:0 "High-Volume Nanite Production"
+  adveng_tech_nanites_2_desc:0 ""
+
+  adveng_tech_energy_2:0 "Higher-Dimensional Energy Generation"
+  adveng_tech_energy_2_desc:0 ""
+
+  adveng_tech_minerals_2:0 "Improved Mass Fabrication"
+  adveng_tech_minerals_2_desc:0 ""
+
+  adveng_tech_food_2:0 "Bio-Replication"
+  adveng_tech_food_2_desc:0 ""
+
+  adveng_tech_alloys_2:0 "Smart Matter Weapons Fabrication"
+  adveng_tech_alloys_2_desc:0 ""
+
+  adveng_tech_cgs_2:0 "Civilian Picofabrication"
+  adveng_tech_cgs_2_desc:0 ""
+
+  adveng_tech_research_2:0 "Pocket Supercomputing"
+  adveng_tech_research_2_desc:0 ""
+
+  adveng_tech_housing_2:0 "Habitation Optimization"
+  adveng_tech_housing_2_desc:0 ""
+
+  adveng_tech_unity_2:0 "Galactic Communications"
+  adveng_tech_unity_2_desc:0 ""
+
+  adveng_tech_refinery_2:0 "Aetherophasic Refinery Hubs"
+  adveng_tech_refinery_2_desc:0 ""
+
+  #Ship techs
+  adveng_tech_corvette_1:0 "Corvette Augmentation 1"
+  adveng_tech_corvette_1_desc:0 ""
+
+  adveng_tech_destroyer_1:0 "Destroyer Augmentation 1"
+  adveng_tech_destroyer_1_desc:0 ""
+
+  adveng_tech_cruiser_1:0 "Cruiser Augmentation 1"
+  adveng_tech_cruiser_1_desc:0 ""
+
+  adveng_tech_battleship_1:0 "Battleship Augmentation 1"
+  adveng_tech_battleship_1_desc:0 ""
+
+  adveng_tech_titan_1:0 "Titan Augmentation 1"
+  adveng_tech_titan_1_desc:0 ""
+
+  adveng_tech_juggernaut_1:0 "Juggernaut Augmentation 1"
+  adveng_tech_juggernaut_1_desc:0 ""
+
+  adveng_tech_corvette_2:0 "Corvette Augmentation 2"
+  adveng_tech_corvette_2_desc:0 ""
+
+  adveng_tech_destroyer_2:0 "Destroyer Augmentation 2"
+  adveng_tech_destroyer_2_desc:0 ""
+
+  adveng_tech_cruiser_2:0 "Cruiser Augmentation 2"
+  adveng_tech_cruiser_2_desc:0 ""
+
+  adveng_tech_battleship_2:0 "Battleship Augmentation 2"
+  adveng_tech_battleship_2_desc:0 ""
+
+  adveng_tech_titan_2:0 "Titan Augmentation 2"
+  adveng_tech_titan_2_desc:0 ""
+
+  adveng_tech_juggernaut_2:0 "Juggernaut Augmentation 2"
+  adveng_tech_juggernaut_2_desc:0 ""
+
+  #Misc techs
+  adveng_tech_army_1:0 "Advanced Army Supplies"
+  adveng_tech_army_1_desc:0 ""
+
+  adveng_tech_building_slot_1:0 "Advanced Planetary Engineering"
+  adveng_tech_building_slot_1_desc:0 ""
+
+  adveng_tech_army_2:0 "Aetherophasic Weaponry"
+  adveng_tech_army_2_desc:0 ""
+
+  adveng_tech_building_slot_2:0 "Planetary Engineering Mastery"
+  adveng_tech_building_slot_2_desc:0 ""
+
+  #Buildings
+
+  #T1
+  adveng_building_dark_matter_1:0 "Dark Matter Condenser"
+  adveng_building_dark_matter_1_desc:0 ""
+
+  adveng_building_nanites_1:0 "Nanite Factory"
+  adveng_building_nanites_1_desc:0 ""
+
+  adveng_building_energy_1:0 "Dark Matter Reactor"
+  adveng_building_energy_1_desc:0 ""
+
+  adveng_building_minerals_1:0 "Mass Fabrication Plant"
+  adveng_building_minerals_1_desc:0 ""
+
+  adveng_building_food_1:0 "Agri-Processing Plant"
+  adveng_building_food_1_desc:0 ""
+
+  adveng_building_alloys_1:0 "Autonomous Fabricators"
+  adveng_building_alloys_1_desc:0 ""
+
+  adveng_building_CG_1:0 "Civilian Factory Complex"
+  adveng_building_CG_1_desc:0 ""
+
+  adveng_building_tech_1:0 "Research Facilities"
+  adveng_building_tech_1_desc:0 ""
+
+  adveng_building_housing_1:0 "Dome Complex"
+  adveng_building_housing_1_desc:0 ""
+
+  adveng_building_unity_1:0 "Bureaucratic Transmission Hub"
+  adveng_building_unity_1_desc:0 ""
+
+  adveng_building_refinery_1:0 "Auto-Refinery"
+  adveng_building_refinery_1_desc:0 ""
+
+  #T2
+  adveng_building_dark_matter_2:0 "Advanced Dark Matter Condenser"
+  adveng_building_dark_matter_2_desc:0 ""
+
+  adveng_building_nanites_2:0 "Advanced Nanite Factory"
+  adveng_building_nanites_2_desc:0 ""
+
+  adveng_building_zro:0 "Aetherophasic Condenser"
+  adveng_building_zro_desc:0 ""
+
+  adveng_building_living_metal:0 "Living Metal Fabrication Plant"
+  adveng_building_living_metal_desc:0 ""
+
+  adveng_building_energy_2:0 "Aetherophasic Reactor"
+  adveng_building_energy_2_desc:0 ""
+
+  adveng_building_minerals_2:0 "Mass Fabrication Complex"
+  adveng_building_minerals_2_desc:0 ""
+
+  adveng_building_food_2:0 "Bio-Replication Complex"
+  adveng_building_food_2_desc:0 ""
+
+  adveng_building_alloys_2:0 "Autonomous Fabricator Complex"
+  adveng_building_alloys_2_desc:0 ""
+
+  adveng_building_CG_2:0 "Auto-Factory Complex"
+  adveng_building_CG_2_desc:0 ""
+
+  adveng_building_tech_2:0 "Advanced Research Facilities"
+  adveng_building_tech_2_desc:0 ""
+
+  adveng_building_housing_2:0 "Advanced Dome Complex"
+  adveng_building_housing_2_desc:0 ""
+
+  adveng_building_unity_2:0 "Psychic Transmission Array"
+  adveng_building_unity_2_desc:0 ""
+
+  adveng_building_refinery_2:0 "Auto-Refinery Hub"
+  adveng_building_refinery_2_desc:0 ""
+
+  #T2 compat

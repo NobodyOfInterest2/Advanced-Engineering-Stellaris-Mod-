@@ -1,0 +1,61 @@
+##base production, base production addition
+adveng_resource_automation = {
+	base = $BASE$
+	##[[!BASE_VALUE]
+	##	add = $BASE$
+	##]
+	##[resource] from [job] (base)
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = planet_$ECONOMIC_CATEGORY$_$RESOURCE$_produces_add
+		}
+		mode = add
+	}
+
+	##take into account various modifiers, such as resources from jobs
+	mult = value:adveng_resource_automation_mult|ECONOMIC_CATEGORY|$ECONOMIC_CATEGORY$|RESOURCE|$RESOURCE$|
+	##multiply by a number that represents the number of jobs this should be worth
+	mult = $COUNT$
+}
+
+##category output, resources from jobs
+adveng_resource_automation_mult = {
+	base = 1
+
+	##resources from jobs
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = planet_jobs_produces_mult
+		}
+		mode = add
+	}
+
+	##[resource] from [job] (percent)
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = planet_$ECONOMIC_CATEGORY$_$RESOURCE$_produces_mult
+		}
+		mode = add
+	}
+
+	##[job] output
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = planet_$ECONOMIC_CATEGORY$_produces_mult
+		}
+		mode = add
+	}
+
+	##[resource] from jobs
+	complex_trigger_modifier = {
+		trigger = check_modifier_value
+		parameters = {
+			modifier = planet_jobs_$RESOURCE$_produces_mult
+		}
+		mode = add
+	}
+}

@@ -1,0 +1,390 @@
+##Bow
+#artillery L1M1
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_BOW_ARTILLERY"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery artillery_stealth }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#broadside M3
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_BOW_BROADSIDE"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_M2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship carrier }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#torpedo S2G2
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_BOW_TORPEDO"
+	ship_size = cruiser
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "cruiser_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+##Core
+#artillery M2L1
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_MID_ARTILLERY"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_L1M1_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery artillery_stealth }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#broadside M4
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_MID_BROADSIDE"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_M3_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#hangar P4H1
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_MID_HANGAR"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_S2HB_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { carrier }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		rotation = -90
+		locatorname = "strike_craft_locator_01"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#torpedo S3G3
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_MID_TORPEDO"
+	ship_size = cruiser
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "cruiser_mid_M2S2_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = {  explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_03"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	medium_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+##Stern
+#broadside M1S1
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_STERN_BROADSIDE"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth carrier }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}
+
+#gunship S3
+ship_section_template = {
+	key = "ADVENG_T1_CRUISER_STERN_GUNSHIP"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+
+	prerequisites = { adveng_tech_cruiser_1 }
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 4
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_cruiser
+			nanites = @adveng_t1_section_cost_nanites_cruiser
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
+		}
+	}
+}

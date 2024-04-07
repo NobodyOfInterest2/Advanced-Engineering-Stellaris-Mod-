@@ -1,0 +1,4 @@
+produces = {
+	volatile_motes = 1
+	multiplier = value:adveng_resource_automation|BASE|$base$|ECONOMIC_CATEGORY|chemists|RESOURCE|volatile_motes|COUNT|$count$|
+}

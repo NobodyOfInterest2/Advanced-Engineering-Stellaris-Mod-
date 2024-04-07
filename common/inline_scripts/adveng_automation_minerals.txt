@@ -1,0 +1,4 @@
+produces = {
+	minerals = 1
+	multiplier = value:adveng_resource_automation|BASE|$base$|ECONOMIC_CATEGORY|miners|RESOURCE|minerals|COUNT|$count$|
+}

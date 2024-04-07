@@ -1,0 +1,36 @@
+##resources will have a base of one job's worth if applicable
+
+##minerals
+@adveng_mineral_output_base = 4
+
+##energy
+@adveng_energy_output_base = 6
+@adveng_energy_output_machine = 8
+
+##food
+@adveng_food_output_base = 6
+@adveng_food_output_machine = 5
+
+##alloys
+@adveng_alloys_output_base = 3
+##I have no idea why specifically the t2 alloy output is more than halved, so here's a bandaid fix 
+@adveng_alloys_output_base_t2 = 6.1 
+@adveng_alloys_output_machine = 4
+
+##CGs
+@adveng_CG_output_base = 6
+@adveng_artificer_output_base = 7
+
+##tech
+@adveng_tech_output_base = 3
+
+##unity
+@adveng_unity_output_base = 4
+
+##rare resources
+@adveng_rare_output_base = 2
+
+##strategic resources
+@adveng_strategic_output_base = 2
+
+##end automation values

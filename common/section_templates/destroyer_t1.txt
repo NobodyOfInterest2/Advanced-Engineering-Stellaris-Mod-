@@ -1,0 +1,310 @@
+##Bow
+#artillery 1L1M
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_BOW_ARTILLERY"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery artillery_stealth }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_destroyers }
+		}
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 9
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}
+
+#gunship 2M2S
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_BOW_GUNSHIP"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship brawler }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 9
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}
+
+#picket 1M4P
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_BOW_PICKET"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			has_technology = tech_destroyers
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 9
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}
+
+##Stern
+#gunship 1M1S
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_STERN_GUNSHIP"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}
+
+#interceptor 3S
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_STERN_INTERCEPTOR"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship brawler }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	ai_weight = {
+		factor = 100
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}
+
+#picket 3P
+ship_section_template = {
+	key = "ADVENG_T1_DESTROYER_STERN_PICKET"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
+
+	prerequisites = { adveng_tech_destroyer_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @adveng_t1_section_cost_alloys_destroyer
+			nanites = @adveng_t1_section_cost_nanites_destroyer
+			sr_dark_matter = @adveng_t1_section_cost_dark_matter_destroyer
+		}
+	}
+}

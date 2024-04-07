@@ -1,0 +1,58 @@
+#Vanilla Section Costs
+#Corvette/Frigate/Destroyer: 30
+#Cruiser: 40
+#Battleship: 80
+#Titan: 160
+#Juggernaut: 960
+
+#costs
+@adveng_t1_section_cost_alloys_corvette = 45
+@adveng_t1_section_cost_nanites_corvette = 0.5
+@adveng_t1_section_cost_dark_matter_corvette = 0.5
+@adveng_t2_section_cost_alloys_corvette = 60
+@adveng_t2_section_cost_living_metal_corvette = 1
+@adveng_t2_section_cost_zro_corvette = 1
+
+@adveng_t1_section_cost_alloys_destroyer = 45
+@adveng_t1_section_cost_nanites_destroyer = 0.5
+@adveng_t1_section_cost_dark_matter_destroyer = 0.5
+@adveng_t2_section_cost_alloys_destroyer = 60
+@adveng_t2_section_cost_living_metal_destroyer = 1
+@adveng_t2_section_cost_zro_destroyer = 1
+
+@adveng_t1_section_cost_alloys_cruiser = 60
+@adveng_t1_section_cost_nanites_cruiser = 0.65
+@adveng_t1_section_cost_dark_matter_cruiser = 0.65
+@adveng_t2_section_cost_alloys_cruiser = 80
+@adveng_t2_section_cost_living_metal_cruiser = 1.3
+@adveng_t2_section_cost_zro_cruiser = 1.3
+
+@adveng_t1_section_cost_alloys_battleship = 120
+@adveng_t1_section_cost_nanites_battleship = 1.3
+@adveng_t1_section_cost_dark_matter_battleship = 1.3
+@adveng_t2_section_cost_alloys_battleship = 160
+@adveng_t2_section_cost_living_metal_battleship = 2.6
+@adveng_t2_section_cost_zro_battleship = 2.6
+
+@adveng_t1_section_cost_alloys_titan = 240
+@adveng_t1_section_cost_nanites_titan = 2.6
+@adveng_t1_section_cost_dark_matter_titan = 2.6
+@adveng_t2_section_cost_alloys_titan = 320
+@adveng_t2_section_cost_living_metal_titan = 5.4
+@adveng_t2_section_cost_zro_titan = 5.4
+
+@adveng_t1_section_cost_alloys_juggernaut = 1440
+@adveng_t1_section_cost_nanites_juggernaut = 24
+@adveng_t1_section_cost_dark_matter_juggernaut = 24
+@adveng_t2_section_cost_alloys_juggernaut = 1920
+@adveng_t2_section_cost_living_metal_juggernaut = 48
+@adveng_t2_section_cost_zro_juggernaut = 48
+
+@adveng_corvette_hull_boost = 100
+@adveng_frigate_hull_boost = 200
+@adveng_destroyer_hull_boost = 300
+@adveng_cruiser_hull_boost = 450
+@adveng_battleship_hull_boost = 750
+@adveng_titan_hull_boost = 2500
+@adveng_juggernaut_hull_boost = 25000
+#end ships

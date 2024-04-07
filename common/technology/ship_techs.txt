@@ -1,0 +1,219 @@
+##corvette
+adveng_tech_corvette_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_corvette_hull_2
+		tech_torpedoes_1
+	}
+	weight = @adveng_t1_tech_weight_high
+
+	modifier = {
+		shipsize_corvette_hull_add = @adveng_corvette_hull_boost
+	}
+}
+
+adveng_tech_corvette_2 = {
+	cost = @adveng_t2_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_corvette_1
+	}
+	weight = @adveng_t2_tech_weight_high
+
+	modifier = {
+		shipsize_corvette_hull_add = @adveng_corvette_hull_boost
+	}
+}
+
+##destroyer
+adveng_tech_destroyer_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_destroyer_hull_2
+	}
+	weight = @adveng_t1_tech_weight_high
+
+	modifier = {
+		shipsize_destroyer_hull_add = @adveng_destroyer_hull_boost
+	}
+}
+
+adveng_tech_destroyer_2 = {
+	cost = @adveng_t2_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_destroyer_1
+	}
+	weight = @adveng_t2_tech_weight_high
+
+	modifier = {
+		shipsize_destroyer_hull_add = @adveng_destroyer_hull_boost
+	}
+}
+
+
+##cruiser
+adveng_tech_cruiser_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_cruiser_hull_2
+		tech_torpedoes_1
+	}
+	weight = @adveng_t1_tech_weight_high
+
+	modifier = {
+		shipsize_cruiser_hull_add = @adveng_cruiser_hull_boost
+	}
+}
+
+adveng_tech_cruiser_2 = {
+	cost = @adveng_t2_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_cruiser_1
+	}
+	weight = @adveng_t2_tech_weight_high
+
+	modifier = {
+		shipsize_cruiser_hull_add = @adveng_cruiser_hull_boost
+	}
+}
+
+
+##battleship
+adveng_tech_battleship_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_battleship_hull_2
+		tech_energy_lance_1
+		tech_arc_emitter_1
+		tech_mass_accelerator_1
+	}
+	weight = @adveng_t1_tech_weight_high
+
+	modifier = {
+		shipsize_battleship_hull_add = @adveng_battleship_hull_boost
+	}
+}
+
+adveng_tech_battleship_2 = {
+	cost = @adveng_t2_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_battleship_1
+	}
+	weight = @adveng_t2_tech_weight_high
+
+	modifier = {
+		shipsize_battleship_hull_add = @adveng_battleship_hull_boost
+	}
+}
+
+
+##titan
+adveng_tech_titan_1 = {
+	cost = @adveng_t1_tech_cost_high
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_titan_hull_2
+		tech_torpedoes_1
+	}
+	weight = @adveng_t1_tech_weight_low
+
+	modifier = {
+		shipsize_titan_hull_add = @adveng_titan_hull_boost
+	}
+}
+
+adveng_tech_titan_2 = {
+	cost = @adveng_t2_tech_cost_high
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_titan_1
+	}
+	weight = @adveng_t2_tech_weight_low
+
+	modifier = {
+		shipsize_titan_hull_add = @adveng_titan_hull_boost
+	}
+}
+
+
+##juggernaut
+adveng_tech_juggernaut_1 = {
+	cost = @adveng_t1_tech_cost_high
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_1
+		adveng_tech_nanites_1
+		tech_juggernaut
+	}
+	weight = @adveng_t1_tech_weight_low
+
+	modifier = {
+		shipsize_juggernaut_hull_add = @adveng_juggernaut_hull_boost
+	}
+}
+
+adveng_tech_juggernaut_2 = {
+	cost = @adveng_t2_tech_cost_high
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { 
+		adveng_tech_dark_matter_2
+		adveng_tech_nanites_2
+		adveng_tech_juggernaut_1
+	}
+	weight = @adveng_t2_tech_weight_low
+
+	modifier = {
+		shipsize_juggernaut_hull_add = @adveng_juggernaut_hull_boost
+	}
+}

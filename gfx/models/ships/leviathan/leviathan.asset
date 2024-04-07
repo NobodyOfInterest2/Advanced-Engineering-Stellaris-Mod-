@@ -1,0 +1,16 @@
+
+
+entity = {
+	name = "leviathan_ship_entity"
+	pdxmesh = "leviathan_model_mesh"
+	cull_radius = 1000
+
+	scale = 1
+}
+
+entity = {
+	name = "leviathan_weapons_entity"
+	pdxmesh = "leviathan_weapons_mesh"
+	cull_radius = 1000
+	scale = 1
+}
