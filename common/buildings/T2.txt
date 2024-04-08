@@ -546,6 +546,8 @@ adveng_building_refinery_2 = {
 
 	planet_modifier = {
 		planet_refiners_produces_mult = 0.2
+		planet_translucers_produces_mult = 0.2
+		planet_chemists_produces_mult = 0.2
 	}
 
 	resources = {

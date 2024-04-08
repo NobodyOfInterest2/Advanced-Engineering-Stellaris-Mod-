@@ -98,8 +98,7 @@ adveng_tech_zro_theory = {
 	tier = 5
 	category = { psionics }
 	prerequisites = {
-		tech_engineering_3
-		tech_alloys_2
+		adveng_tech_dark_matter_1
 	}
 	weight = @adveng_t2_tech_weight_high
 

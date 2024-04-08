@@ -197,7 +197,7 @@ adveng_tech_nanites_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = engineering
 	tier = 5
-	category = { field_manipulation }
+	category = { industry }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -225,7 +225,7 @@ adveng_tech_minerals_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = engineering
 	tier = 5
-	category = { field_manipulation }
+	category = { industry }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -253,7 +253,7 @@ adveng_tech_alloys_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = engineering
 	tier = 5
-	category = { field_manipulation }
+	category = { industry }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -267,7 +267,7 @@ adveng_tech_cgs_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = engineering
 	tier = 5
-	category = { field_manipulation }
+	category = { industry }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -281,7 +281,7 @@ adveng_tech_research_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = physics
 	tier = 5
-	category = { field_manipulation }
+	category = { computing }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -295,7 +295,7 @@ adveng_tech_housing_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = society
 	tier = 5
-	category = { field_manipulation }
+	category = { new_worlds }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -309,7 +309,7 @@ adveng_tech_unity_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = society
 	tier = 5
-	category = { field_manipulation }
+	category = { statecraft }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
@@ -323,7 +323,7 @@ adveng_tech_refinery_2 = {
 	cost = @adveng_t1_tech_cost_medium
 	area = engineering
 	tier = 5
-	category = { field_manipulation }
+	category = { industry }
 	prerequisites = { 
 		adveng_tech_zro
 		adveng_tech_living_metal
