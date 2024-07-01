@@ -3,4 +3,4 @@ tags={
 	"Total Conversion"
 }
 name="Advanced Engineering"
-supported_version="3.11.*"
+supported_version="3.12.*"
