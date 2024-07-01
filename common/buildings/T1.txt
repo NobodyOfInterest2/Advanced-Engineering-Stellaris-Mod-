@@ -19,88 +19,12 @@
 ##nanites: sr_nanites
 
 
-##Dark Matter
-
-adveng_building_dark_matter_1 = {
-	base_buildtime = @adveng_t1_build_time_complex
-
-	category = manufacturing
-
-	upgrades = {
-		"adveng_building_dark_matter_2"
-	}
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t1_cost_minerals
-		}
-		upkeep = {
-			energy = @adveng_t1_upkeep_energy_sr
-			minerals = @adveng_t1_upkeep_minerals_sr
-		}
-		inline_script = {
-			script = adveng_automation_dark_matter
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_dark_matter_1
-	}
-}
-
-##Nanites
-adveng_building_nanites_1 = {
-	base_buildtime = @adveng_t1_build_time_complex
-
-	category = manufacturing
-
-	upgrades = {
-		"adveng_building_nanites_2"
-	}
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t1_cost_minerals
-		}
-		upkeep = {
-			energy = @adveng_t1_upkeep_energy_sr
-			minerals = @adveng_t1_upkeep_minerals_sr
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
-		}
-		inline_script = {
-			script = adveng_automation_nanites
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_nanites_1
-	}
-}
-
 ##Energy
 
 adveng_building_energy_1 = {
 	base_buildtime = @adveng_t1_build_time_simple
+
+	icon = "building_power_plant"
 
 	category = resource
 
@@ -142,10 +66,10 @@ adveng_building_energy_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
+			energy = @adveng_t1_upkeep_energy
 		}
 		inline_script = {
 			script = adveng_automation_energy
@@ -163,6 +87,8 @@ adveng_building_energy_1 = {
 
 adveng_building_minerals_1 = {
 	base_buildtime = @adveng_t1_build_time_simple
+
+	icon = "building_mine_generic"
 
 	category = resource
 
@@ -203,11 +129,10 @@ adveng_building_minerals_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		inline_script = {
 			script = adveng_automation_minerals
@@ -225,6 +150,8 @@ adveng_building_minerals_1 = {
 
 adveng_building_food_1 = {
 	base_buildtime = @adveng_t1_build_time_simple
+
+	icon = "building_hydroponics_farm"
 
 	category = resource
 
@@ -265,11 +192,10 @@ adveng_building_food_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		inline_script = {
 			script = adveng_automation_food
@@ -287,6 +213,8 @@ adveng_building_food_1 = {
 
 adveng_building_alloys_1 = {
 	base_buildtime = @adveng_t1_build_time_complex
+
+	icon = "building_foundry_2"
 
 	category = manufacturing
 
@@ -361,7 +289,7 @@ adveng_building_alloys_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			trigger = {
@@ -371,7 +299,6 @@ adveng_building_alloys_1 = {
 			}
 			energy = @adveng_t1_upkeep_energy
 			minerals = @adveng_t1_upkeep_minerals
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		upkeep = {
 			trigger = {
@@ -381,7 +308,6 @@ adveng_building_alloys_1 = {
 			}
 			energy = @adveng_t1_upkeep_energy
 			food = @adveng_t1_upkeep_food
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		inline_script = {
 			script = adveng_automation_alloys
@@ -399,6 +325,8 @@ adveng_building_alloys_1 = {
 
 adveng_building_CG_1 = {
 	base_buildtime = @adveng_t1_build_time_complex
+
+	icon = "building_factory_2"
 
 	category = manufacturing
 
@@ -455,12 +383,11 @@ adveng_building_CG_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			minerals = @adveng_t1_upkeep_minerals
 			energy = @adveng_t1_upkeep_energy
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		
 		inline_script = {
@@ -479,6 +406,8 @@ adveng_building_CG_1 = {
 
 adveng_building_tech_1 = {
 	base_buildtime = @adveng_t1_build_time_complex
+
+	icon = "building_research_lab_2"
 
 	category = research
 
@@ -529,12 +458,11 @@ adveng_building_tech_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
 			consumer_goods = @adveng_t1_upkeep_CGs
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		
 		inline_script = {
@@ -561,123 +489,11 @@ adveng_building_tech_1 = {
 	}
 }
 
-##Strategic Resources
-
-adveng_building_refinery_1 = {
-	base_buildtime = @adveng_t1_build_time_complex
-
-	category = manufacturing
-
-	upgrades = {
-		"adveng_building_refinery_2"
-	}
-	
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	planet_modifier = {
-		planet_refiners_produces_mult = 0.1
-		planet_translucers_produces_mult = 0.1
-		planet_chemists_produces_mult = 0.1
-		
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					is_catalytic_empire = no
-				}
-			}
-			energy = @adveng_t1_upkeep_energy
-			minerals = @adveng_t1_upkeep_minerals
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					is_catalytic_empire = yes
-				}
-			}
-			energy = @adveng_t1_upkeep_energy
-			food = @adveng_t1_upkeep_food
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
-		}
-		inline_script = {
-			script = adveng_automation_exotic_gas
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-		
-		inline_script = {
-			script = adveng_automation_volatile_motes
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-		
-		inline_script = {
-			script = adveng_automation_rare_crystals
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-		
-	}
-
-	prerequisites = {
-		adveng_tech_refinery_1
-	}	
-}
-
-##housing/ameneties
-adveng_building_housing_1 = {
-	base_buildtime = @adveng_t1_build_time_simple
-	upgrades = {
-		"adveng_building_housing_2"
-	}
-	category = amenity
-	planet_modifier = {
-		planet_housing_add = 15
-		planet_amenities_add = 15
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				has_valid_civic = civic_machine_servitor
-			}
-		}
-		modifier = {
-			job_bio_trophy_add = @adveng_t1_bio_trophy_count
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
-		}
-		upkeep = {
-			energy = @adveng_t1_upkeep_energy
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
-		}
-	}
-	prerequisites = {
-		adveng_tech_housing_1
-	}
-}
-
 ##unity
 adveng_building_unity_1 = {
 	base_buildtime = @adveng_t1_build_time_complex
+
+	icon = "building_commercial_zone"
 
 	category = unity
 
@@ -749,11 +565,10 @@ adveng_building_unity_1 = {
 		category = planet_buildings
 		cost = {
 			minerals = @adveng_t1_cost_minerals
-			nanites = @adveng_t1_cost_nanites
+			alloys = @adveng_t1_cost_alloys
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
-			sr_dark_matter = @adveng_t1_upkeep_dark_matter
 		}
 		inline_script = {
 			script = adveng_automation_unity

@@ -28,7 +28,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -68,7 +67,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -114,7 +112,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -155,7 +152,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -200,7 +196,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -251,7 +246,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -307,7 +301,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -343,7 +336,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}
@@ -383,7 +375,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t1_section_cost_alloys_cruiser
-			nanites = @adveng_t1_section_cost_nanites_cruiser
 			sr_dark_matter = @adveng_t1_section_cost_dark_matter_cruiser
 		}
 	}

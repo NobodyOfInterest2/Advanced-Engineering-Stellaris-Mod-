@@ -43,7 +43,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}
@@ -116,7 +115,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}
@@ -181,7 +179,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}
@@ -217,7 +214,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}
@@ -266,7 +262,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}
@@ -325,7 +320,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_destroyer
-			sr_living_metal = @adveng_t2_section_cost_living_metal_destroyer
 			sr_zro = @adveng_t2_section_cost_zro_destroyer
 		}
 	}

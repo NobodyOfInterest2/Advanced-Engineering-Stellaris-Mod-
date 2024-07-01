@@ -54,7 +54,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -119,7 +118,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -201,7 +199,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -268,7 +265,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -341,7 +337,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -487,7 +482,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -533,7 +527,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -598,7 +591,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}
@@ -684,7 +676,6 @@ ship_section_template = {
 		category = ship_sections
 		cost = {
 			alloys = @adveng_t2_section_cost_alloys_titan
-			sr_living_metal = @adveng_t2_section_cost_living_metal_titan
 			sr_zro = @adveng_t2_section_cost_zro_titan
 		}
 	}

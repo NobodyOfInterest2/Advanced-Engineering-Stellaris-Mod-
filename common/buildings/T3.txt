@@ -10,93 +10,14 @@
 ##exotic gases: exotic_gases
 ##volatile motes: volatile_motes
 ##rare crystals: rare_crystals
-##living metal: sr_living_metal
 ##zro: sr_zro
 ##dark matter: sr_dark_matter
-##nanites: sr_nanites
 
 
 ##Dark Matter
 
-adveng_building_dark_matter_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
-
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_dark_matter_3"
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
-		}
-		upkeep = {
-			energy = @adveng_t2_upkeep_energy_sr
-			minerals = @adveng_t2_upkeep_minerals_sr
-		}
-		inline_script = {
-			script = adveng_automation_dark_matter
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_dark_matter_2
-	}
-}
-
-##alloys
-adveng_building_alloys_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_alloys_3"
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
-		}
-		upkeep = {
-			energy = @adveng_t2_upkeep_energy_sr
-			minerals = @adveng_t2_upkeep_minerals_sr
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
-		}
-		inline_script = {
-			script = adveng_automation_alloys
-			base = @adveng_strategic_output_base
-			count = @adveng_t2_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_alloys_2
-	}
-}
-
-##Energy
-
-adveng_building_energy_2 = {
-	base_buildtime = @adveng_t2_build_time_simple
+adveng_building_dark_matter_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
 
 	can_build = no
 
@@ -107,9 +28,78 @@ adveng_building_energy_2 = {
 	allow = {
 	}
 
-	upgrades = {
-		"adveng_building_energy_3"
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy_sr
+			minerals = @adveng_t3_upkeep_minerals_sr
+		}
+		inline_script = {
+			script = adveng_automation_dark_matter
+			base = @adveng_strategic_output_base
+			count = @adveng_t2_job_count
+		}
 	}
+
+	prerequisites = {
+		adveng_tech_dark_matter_3
+	}
+}
+
+##alloys
+adveng_building_alloys_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
+
+	can_build = no
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy_sr
+			minerals = @adveng_t3_upkeep_minerals_sr
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+		inline_script = {
+			script = adveng_automation_alloys
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_alloys_3
+	}
+}
+
+##Energy
+
+adveng_building_energy_3 = {
+	base_buildtime = @adveng_t3_build_time_simple
+
+	can_build = no
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+	}
+
 
 	triggered_planet_modifier = {
 		potential = {
@@ -119,7 +109,7 @@ adveng_building_energy_2 = {
 			}
 		}
 		modifier = {
-			job_technician_add = @adveng_t2_job_count
+			job_technician_add = @adveng_t3_job_count
 		}
 	}
 
@@ -129,35 +119,35 @@ adveng_building_energy_2 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_technician_drone_add = @adveng_t2_job_count
+			job_technician_drone_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		inline_script = {
 			script = adveng_automation_energy
 			base = @adveng_energy_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_energy_2
+		adveng_tech_energy_3
 	}
 }
 
 ##Minerals
 
-adveng_building_minerals_2 = {
-	base_buildtime = @adveng_t2_build_time_simple
+adveng_building_minerals_3 = {
+	base_buildtime = @adveng_t3_build_time_simple
 
 	category = resource
 
@@ -170,10 +160,6 @@ adveng_building_minerals_2 = {
 	allow = {
 	}
 
-	upgrades = {
-		"adveng_building_minerals_3"
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -182,7 +168,7 @@ adveng_building_minerals_2 = {
 			}
 		}
 		modifier = {
-			job_miner_add = @adveng_t2_job_count
+			job_miner_add = @adveng_t3_job_count
 		}
 	}
 
@@ -192,36 +178,36 @@ adveng_building_minerals_2 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_mining_drone_add = @adveng_t2_job_count
+			job_mining_drone_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			energy = @adveng_t2_upkeep_energy
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		inline_script = {
 			script = adveng_automation_minerals
 			base = @adveng_mineral_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_minerals_2
+		adveng_tech_minerals_3
 	}
 }
 
 ##food
 
-adveng_building_food_2 = {
-	base_buildtime = @adveng_t2_build_time_simple
+adveng_building_food_3 = {
+	base_buildtime = @adveng_t3_build_time_simple
 
 	can_build = no
 
@@ -230,10 +216,6 @@ adveng_building_food_2 = {
 	}
 
 	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_food_3"
 	}
 
 	triggered_planet_modifier = {
@@ -244,7 +226,7 @@ adveng_building_food_2 = {
 			}
 		}
 		modifier = {
-			job_farmer_add = @adveng_t2_job_count
+			job_farmer_add = @adveng_t3_job_count
 		}
 	}
 
@@ -254,36 +236,36 @@ adveng_building_food_2 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_agri_drone_add = @adveng_t2_job_count
+			job_agri_drone_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			energy = @adveng_t2_upkeep_energy
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		inline_script = {
 			script = adveng_automation_food
 			base = @adveng_food_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_food_2
+		adveng_tech_food_3
 	}
 }
 
 ##Alloys
 
-adveng_building_alloys_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
+adveng_building_alloys_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
 
 	can_build = no
 
@@ -292,10 +274,6 @@ adveng_building_alloys_2 = {
 	}
 
 	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_alloys_3"
 	}
 
 	triggered_planet_modifier = {
@@ -307,7 +285,7 @@ adveng_building_alloys_2 = {
 			}
 		}
 		modifier = {
-			job_foundry_add = @adveng_t2_job_count
+			job_foundry_add = @adveng_t3_job_count
 		}
 	}
 
@@ -320,7 +298,7 @@ adveng_building_alloys_2 = {
 			}
 		}
 		modifier = {
-			job_alloy_drone_add = @adveng_t2_job_count
+			job_alloy_drone_add = @adveng_t3_job_count
 		}
 	}
 
@@ -335,7 +313,7 @@ adveng_building_alloys_2 = {
 			}
 		}
 		modifier = {
-			job_catalytic_technician_add = @adveng_t2_job_count
+			job_catalytic_technician_add = @adveng_t3_job_count
 		}
 	}
 
@@ -350,15 +328,15 @@ adveng_building_alloys_2 = {
 			}
 		}
 		modifier = {
-			job_catalytic_drone_add = @adveng_t2_job_count
+			job_catalytic_drone_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
 			trigger = {
@@ -366,9 +344,9 @@ adveng_building_alloys_2 = {
 					is_catalytic_empire = no
 				}
 			}
-			energy = @adveng_t2_upkeep_energy
-			minerals = @adveng_t2_upkeep_minerals
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			minerals = @adveng_t3_upkeep_minerals
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		upkeep = {
 			trigger = {
@@ -376,26 +354,26 @@ adveng_building_alloys_2 = {
 					is_catalytic_empire = yes
 				}
 			}
-			energy = @adveng_t2_upkeep_energy
-			food = @adveng_t2_upkeep_food
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			food = @adveng_t3_upkeep_food
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		inline_script = {
 			script = adveng_automation_alloys
 			base = @adveng_alloys_output_machine
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_alloys_2
+		adveng_tech_alloys_3
 	}
 }
 
 ##CGs
 
-adveng_building_CG_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
+adveng_building_CG_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
 
 	can_build = no
 
@@ -404,10 +382,6 @@ adveng_building_CG_2 = {
 	}
 
 	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_CG_3"
 	}
 
 	triggered_planet_modifier = {
@@ -419,7 +393,7 @@ adveng_building_CG_2 = {
 			}
 		}
 		modifier = {
-			job_artisan_add = @adveng_t2_job_count
+			job_artisan_add = @adveng_t3_job_count
 		}
 	}
 
@@ -429,7 +403,7 @@ adveng_building_CG_2 = {
 			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = @adveng_t2_job_count
+			job_artisan_drone_add = @adveng_t3_job_count
 		}
 	}
 
@@ -444,38 +418,38 @@ adveng_building_CG_2 = {
 			}
 		}
 		modifier = {
-			job_artificer_add = @adveng_t2_job_count
+			job_artificer_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			minerals = @adveng_t2_upkeep_minerals
-			energy = @adveng_t2_upkeep_energy
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			minerals = @adveng_t3_upkeep_minerals
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		
 		inline_script = {
 			script = adveng_automation_consumer_goods
 			base = @adveng_CG_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_cgs_2
+		adveng_tech_cgs_3
 	}
 }
 
 ##Research
 
-adveng_building_tech_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
+adveng_building_tech_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
 
 	can_build = no
 
@@ -484,10 +458,6 @@ adveng_building_tech_2 = {
 	}
 
 	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_tech_3"
 	}
 
 	triggered_planet_modifier = {
@@ -498,7 +468,7 @@ adveng_building_tech_2 = {
 			}
 		}
 		modifier = {
-			job_researcher_add = @adveng_t2_job_count
+			job_researcher_add = @adveng_t3_job_count
 		}
 	}
 
@@ -508,7 +478,7 @@ adveng_building_tech_2 = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_brain_drone_add = @adveng_t2_job_count
+			job_brain_drone_add = @adveng_t3_job_count
 		}
 	}
 
@@ -518,160 +488,50 @@ adveng_building_tech_2 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_calculator_add = @adveng_t2_job_count
+			job_calculator_add = @adveng_t3_job_count
 		}
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			energy = @adveng_t2_upkeep_energy
-			consumer_goods = @adveng_t2_upkeep_CGs
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			consumer_goods = @adveng_t3_upkeep_CGs
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		
 		inline_script = {
 			script = adveng_automation_tech_physics
 			base = @adveng_tech_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 
 		inline_script = {
 			script = adveng_automation_tech_society
 			base = @adveng_tech_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 
 		inline_script = {
 			script = adveng_automation_tech_engineering
 			base = @adveng_tech_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_research_2
+		adveng_tech_research_3
 	}
 }
 
 ##Strategic Resources
 
-adveng_building_refinery_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_refinery_3"
-	}
-
-	planet_modifier = {
-		planet_refiners_produces_mult = 0.1
-		planet_translucers_produces_mult = 0.1
-		planet_chemists_produces_mult = 0.1
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					is_catalytic_empire = no
-				}
-			}
-			energy = @adveng_t2_upkeep_energy
-			minerals = @adveng_t2_upkeep_minerals
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
-		}
-		upkeep = {
-			trigger = {
-				owner = {
-					is_catalytic_empire = yes
-				}
-			}
-			energy = @adveng_t2_upkeep_energy
-			food = @adveng_t2_upkeep_food
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
-		}
-		inline_script = {
-			script = adveng_automation_exotic_gas
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-		
-		inline_script = {
-			script = adveng_automation_volatile_motes
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-		
-		inline_script = {
-			script = adveng_automation_rare_crystals
-			base = @adveng_strategic_output_base
-			count = @adveng_t1_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_refinery_2
-	}	
-}
-
-##housing/ameneties
-adveng_building_housing_2 = {
-	base_buildtime = @adveng_t2_build_time_simple
-
-	upgrades = {
-		"adveng_building_housing_3"
-	}
-
-	planet_modifier = {
-		planet_housing_add = 25
-		planet_amenities_add = 25
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				has_valid_civic = civic_machine_servitor
-			}
-		}
-		modifier = {
-			job_bio_trophy_add = @adveng_t2_bio_trophy_count
-		}
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
-		}
-		upkeep = {
-			energy = @adveng_t2_upkeep_energy
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
-		}
-	}
-	prerequisites = {
-		adveng_tech_housing_2
-	}
-}
-
-##unity
-adveng_building_unity_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
+adveng_building_refinery_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
 
 	can_build = no
 
@@ -682,8 +542,108 @@ adveng_building_unity_2 = {
 	allow = {
 	}
 
-	upgrades = {
-		"adveng_building_unity_3"
+	planet_modifier = {
+		planet_refiners_produces_mult = 0.3
+		planet_translucers_produces_mult = 0.3
+		planet_chemists_produces_mult = 0.3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			minerals = @adveng_t3_upkeep_minerals
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			food = @adveng_t3_upkeep_food
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+		inline_script = {
+			script = adveng_automation_exotic_gas
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+		}
+		
+		inline_script = {
+			script = adveng_automation_volatile_motes
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+		}
+		
+		inline_script = {
+			script = adveng_automation_rare_crystals
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_refinery_3
+	}	
+}
+
+##housing/ameneties
+adveng_building_housing_3 = {
+	base_buildtime = @adveng_t3_build_time_simple
+	can_build = no
+	planet_modifier = {
+		planet_housing_add = 35
+		planet_amenities_add = 35
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+		modifier = {
+			job_bio_trophy_add = @adveng_t3_bio_trophy_count
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+	}
+	prerequisites = {
+		adveng_tech_housing_3
+	}
+}
+
+##unity
+adveng_building_unity_3 = {
+	base_buildtime = @adveng_t3_build_time_complex
+
+	can_build = no
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
 	}
 
 	triggered_planet_modifier = {
@@ -695,7 +655,7 @@ adveng_building_unity_2 = {
 			}
 		}
 		modifier = {
-			job_bureaucrat_add = @adveng_t2_job_count
+			job_bureaucrat_add = @adveng_t3_job_count
 		}
 	}
 
@@ -708,7 +668,7 @@ adveng_building_unity_2 = {
 			}
 		}
 		modifier = {
-			job_priest_add = @adveng_t2_job_count
+			job_priest_add = @adveng_t3_job_count
 		}
 	}
 
@@ -721,7 +681,7 @@ adveng_building_unity_2 = {
 			}
 		}
 		modifier = {
-			job_synapse_drone_add = @adveng_t2_job_count
+			job_synapse_drone_add = @adveng_t3_job_count
 		}
 	}
 
@@ -734,7 +694,7 @@ adveng_building_unity_2 = {
 			}
 		}
 		modifier = {
-			job_coordinator_add = @adveng_t2_job_count
+			job_coordinator_add = @adveng_t3_job_count
 		}
 	}
 
@@ -742,21 +702,56 @@ adveng_building_unity_2 = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
 		}
 		upkeep = {
-			energy = @adveng_t2_upkeep_energy
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
 		}
 		inline_script = {
 			script = adveng_automation_unity
 			base = @adveng_unity_output_base
-			count = @adveng_t2_job_count
+			count = @adveng_t3_job_count
 		}
 	}
 
 	prerequisites = {
-		adveng_tech_unity_2
+		adveng_tech_unity_3
+	}
+}
+
+##zro
+adveng_building_zro = {
+	base_buildtime = @adveng_t3_build_time_complex
+
+	category = manufacturing
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy_sr
+			sr_dark_matter = @adveng_upkeep_dark_matter_sr
+		}
+		inline_script = {
+			script = adveng_automation_zro
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_zro
 	}
 }

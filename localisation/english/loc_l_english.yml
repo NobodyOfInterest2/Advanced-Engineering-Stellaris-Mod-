@@ -117,94 +117,107 @@
   ADVENG_T2_CORE_JUGGERNAUT_SECTION_HANGAR:0 "Carrier Juggernaut"
   ADVENG_T2_CORE_JUGGERNAUT_SECTION_ARTILLERY:0 "Artillery Juggernaut"
 
+  ##T1
+  adveng_tech_energy_1:0 "Power Plant Upscaling"
+  adveng_tech_energy_1_desc:0 ""
+
+  adveng_tech_minerals_1:0 "Robotic Mining Complexes"
+  adveng_tech_minerals_1_desc:0 ""
+
+  adveng_tech_food_1:0 "Hydroponics Automation"
+  adveng_tech_food_1_desc:0 ""
+
+  adveng_tech_alloys_1:0 "Foundry Mechanization"
+  adveng_tech_alloys_1_desc:0 ""
+
+  adveng_tech_cgs_1:0 "Factory Mechanization"
+  adveng_tech_cgs_1_desc:0 ""
+
+  adveng_tech_research_1:0 "Autonomous Research Algorithms"
+  adveng_tech_research_1_desc:0 ""
+
+  adveng_tech_unity_1:0 "Bureaucratic Automation"
+  adveng_tech_unity_1_desc:0 ""
+
   ##Tech Names
-  ##Prereqs
+  ##T2 Prereqs
   adveng_tech_darkmatter_power:0 "Planetside Dark Matter Infrastructure"
   adveng_tech_darkmatter_power_desc:0 ""
 
-  adveng_tech_nanites:0 "Nano-Engineering"
-  adveng_tech_nanites_desc:0 ""
+  ##T2
+  adveng_tech_dark_matter_2:0 "Dark Matter Condensation"
+  adveng_tech_dark_matter_2_desc:0 ""
 
-  ##T1
-  adveng_tech_dark_matter_1:0 "Dark Matter Condensation"
-  adveng_tech_dark_matter_1_desc:0 ""
+  adveng_tech_energy_2:0 "Dark Matter Power Plants"
+  adveng_tech_energy_2_desc:0 ""
 
-  adveng_tech_nanites_1:0 "Nanite Fabrication"
-  adveng_tech_nanites_1_desc:0 ""
+  adveng_tech_minerals_2:0 "Mass Fabrication"
+  adveng_tech_minerals_2_desc:0 ""
 
-  adveng_tech_energy_1:0 "Dark Matter Power Plants"
-  adveng_tech_energy_1_desc:0 ""
+  adveng_tech_food_2:0 "Enhanced Bio-Processing"
+  adveng_tech_food_2_desc:0 ""
 
-  adveng_tech_minerals_1:0 "Mass Fabrication"
-  adveng_tech_minerals_1_desc:0 ""
+  adveng_tech_alloys_2:0 "High-Energy Metallurgy"
+  adveng_tech_alloys_2_desc:0 ""
 
-  adveng_tech_food_1:0 "Enhanced Bio-Processing"
-  adveng_tech_food_1_desc:0 ""
+  adveng_tech_cgs_2:0 "Civilian Mass Farication"
+  adveng_tech_cgs_2_desc:0 ""
 
-  adveng_tech_alloys_1:0 "High-Energy Metallurgy"
-  adveng_tech_alloys_1_desc:0 ""
+  adveng_tech_research_2:0 "Research Equipment Miniaturization"
+  adveng_tech_research_2_desc:0 ""
 
-  adveng_tech_cgs_1:0 "Civilian Mass Farication"
-  adveng_tech_cgs_1_desc:0 ""
+  adveng_tech_housing_2:0 "Habitation Unit Automation"
+  adveng_tech_housing_2_desc:0 ""
 
-  adveng_tech_research_1:0 "Research Equipment Miniaturization"
-  adveng_tech_research_1_desc:0 ""
+  adveng_tech_unity_2:0 "Dark Matter Signal Amplifiers"
+  adveng_tech_unity_2_desc:0 ""
 
-  adveng_tech_housing_1:0 "Habitation Unit Automation"
-  adveng_tech_housing_1_desc:0 ""
+  adveng_tech_refinery_2:0 "Delicate Resource Replication"
+  adveng_tech_refinery_2_desc:0 ""
 
-  adveng_tech_unity_1:0 "Dark Matter Signal Amplifiers"
-  adveng_tech_unity_1_desc:0 ""
-
-  adveng_tech_refinery_1:0 "Delicate Resource Replication"
-  adveng_tech_refinery_1_desc:0 ""
-
-  ##T2 prereqs
-  adveng_tech_living_metal_theory:0 "Picoscale Engineering"
-  adveng_tech_living_metal_theory_desc:0 ""
-
+  ##T3 prereqs
   adveng_tech_zro_theory:0 "Applied Aetherophasics"
   adveng_tech_zro_theory_desc:0 ""
 
-  ##T2
+  ##T3
   adveng_tech_zro:0 "Psychic Energy Condensation"
   adveng_tech_zro_desc:0 ""
 
   adveng_tech_living_metal:0 "Picoscale Assembly Lines"
   adveng_tech_living_metal_desc:0 ""
 
-  adveng_tech_dark_matter_2:0 "Aetherophasic Inversion"
-  adveng_tech_dark_matter_2_desc:0 ""
+  adveng_tech_dark_matter_3:0 "Aetherophasic Inversion"
+  adveng_tech_dark_matter_3_desc:0 ""
 
-  adveng_tech_nanites_2:0 "High-Volume Nanite Production"
-  adveng_tech_nanites_2_desc:0 ""
+  adveng_tech_nanites_3:0 "High-Volume Nanite Production"
+  adveng_tech_nanites_3_desc:0 ""
 
-  adveng_tech_energy_2:0 "Higher-Dimensional Energy Generation"
-  adveng_tech_energy_2_desc:0 ""
+  adveng_tech_energy_3:0 "Higher-Dimensional Energy Generation"
+  adveng_tech_energy_3_desc:0 ""
 
-  adveng_tech_minerals_2:0 "Improved Mass Fabrication"
-  adveng_tech_minerals_2_desc:0 ""
+  adveng_tech_minerals_3:0 "Improved Mass Fabrication"
+  adveng_tech_minerals_3_desc:0 ""
 
-  adveng_tech_food_2:0 "Bio-Replication"
-  adveng_tech_food_2_desc:0 ""
+  adveng_tech_food_3:0 "Bio-Replication"
+  adveng_tech_food_3_desc:0 ""
 
-  adveng_tech_alloys_2:0 "Smart Matter Weapons Fabrication"
-  adveng_tech_alloys_2_desc:0 ""
+  adveng_tech_alloys_3:0 "Smart Matter Weapons Fabrication"
+  adveng_tech_alloys_3_desc:0 ""
 
-  adveng_tech_cgs_2:0 "Civilian Picofabrication"
-  adveng_tech_cgs_2_desc:0 ""
+  adveng_tech_cgs_3:0 "Civilian Picofabrication"
+  adveng_tech_cgs_3_desc:0 ""
 
-  adveng_tech_research_2:0 "Pocket Supercomputing"
-  adveng_tech_research_2_desc:0 ""
+  adveng_tech_research_3:0 "Pocket Supercomputing"
+  adveng_tech_research_3_desc:0 ""
 
-  adveng_tech_housing_2:0 "Habitation Optimization"
-  adveng_tech_housing_2_desc:0 ""
+  adveng_tech_housing_3:0 "Habitation Optimization"
+  adveng_tech_housing_3_desc:0 ""
 
-  adveng_tech_unity_2:0 "Galactic Communications"
-  adveng_tech_unity_2_desc:0 ""
+  adveng_tech_unity_3:0 "Galactic Communications"
+  adveng_tech_unity_3_desc:0 ""
 
-  adveng_tech_refinery_2:0 "Aetherophasic Refinery Hubs"
-  adveng_tech_refinery_2_desc:0 ""
+  adveng_tech_refinery_3:0 "Aetherophasic Refinery Hubs"
+  adveng_tech_refinery_3_desc:0 ""
 
   #Ship techs
   adveng_tech_corvette_1:0 "Corvette Augmentation 1"
@@ -257,79 +270,91 @@
   adveng_tech_building_slot_2_desc:0 ""
 
   #Buildings
-
   #T1
-  adveng_building_dark_matter_1:0 "Dark Matter Condenser"
-  adveng_building_dark_matter_1_desc:0 ""
-
-  adveng_building_nanites_1:0 "Nanite Factory"
-  adveng_building_nanites_1_desc:0 ""
-
-  adveng_building_energy_1:0 "Dark Matter Reactor"
+  adveng_building_energy_1:0 "Reactor Complex"
   adveng_building_energy_1_desc:0 ""
 
-  adveng_building_minerals_1:0 "Mass Fabrication Plant"
+  adveng_building_minerals_1:0 "Mining Boreholes"
   adveng_building_minerals_1_desc:0 ""
 
-  adveng_building_food_1:0 "Agri-Processing Plant"
+  adveng_building_food_1:0 "Advanced Hydroponics Plants"
   adveng_building_food_1_desc:0 ""
 
-  adveng_building_alloys_1:0 "Autonomous Fabricators"
+  adveng_building_alloys_1:0 "Foundry Complex"
   adveng_building_alloys_1_desc:0 ""
 
-  adveng_building_CG_1:0 "Civilian Factory Complex"
+  adveng_building_CG_1:0 "Industrial Complex"
   adveng_building_CG_1_desc:0 ""
 
   adveng_building_tech_1:0 "Research Facilities"
   adveng_building_tech_1_desc:0 ""
 
-  adveng_building_housing_1:0 "Dome Complex"
-  adveng_building_housing_1_desc:0 ""
-
-  adveng_building_unity_1:0 "Bureaucratic Transmission Hub"
+  adveng_building_unity_1:0 "Advanced Bureaucratic Offices"
   adveng_building_unity_1_desc:0 ""
 
-  adveng_building_refinery_1:0 "Auto-Refinery"
-  adveng_building_refinery_1_desc:0 ""
-
   #T2
-  adveng_building_dark_matter_2:0 "Advanced Dark Matter Condenser"
+  adveng_building_dark_matter_2:0 "Dark Matter Condenser"
   adveng_building_dark_matter_2_desc:0 ""
 
-  adveng_building_nanites_2:0 "Advanced Nanite Factory"
-  adveng_building_nanites_2_desc:0 ""
+  adveng_building_energy_2:0 "Dark Matter Reactor"
+  adveng_building_energy_2_desc:0 ""
+
+  adveng_building_minerals_2:0 "Mass Fabrication Plant"
+  adveng_building_minerals_2_desc:0 ""
+
+  adveng_building_food_2:0 "Agri-Processing Plant"
+  adveng_building_food_2_desc:0 ""
+
+  adveng_building_alloys_2:0 "Autonomous Fabricators"
+  adveng_building_alloys_2_desc:0 ""
+
+  adveng_building_CG_2:0 "Civilian Factory Complex"
+  adveng_building_CG_2_desc:0 ""
+
+  adveng_building_tech_2:0 "Research Facilities"
+  adveng_building_tech_2_desc:0 ""
+
+  adveng_building_housing_2:0 "Dome Complex"
+  adveng_building_housing_2_desc:0 ""
+
+  adveng_building_unity_2:0 "Bureaucratic Transmission Hub"
+  adveng_building_unity_2_desc:0 ""
+
+  adveng_building_refinery_2:0 "Auto-Refinery"
+  adveng_building_refinery_2_desc:0 ""
+
+  #T3
+  adveng_building_dark_matter_3:0 "Advanced Dark Matter Condenser"
+  adveng_building_dark_matter_3_desc:0 ""
 
   adveng_building_zro:0 "Aetherophasic Condenser"
   adveng_building_zro_desc:0 ""
 
-  adveng_building_living_metal:0 "Living Metal Fabrication Plant"
-  adveng_building_living_metal_desc:0 ""
+  adveng_building_energy_3:0 "Aetherophasic Reactor"
+  adveng_building_energy_3_desc:0 ""
 
-  adveng_building_energy_2:0 "Aetherophasic Reactor"
-  adveng_building_energy_2_desc:0 ""
+  adveng_building_minerals_3:0 "Mass Fabrication Complex"
+  adveng_building_minerals_3_desc:0 ""
 
-  adveng_building_minerals_2:0 "Mass Fabrication Complex"
-  adveng_building_minerals_2_desc:0 ""
+  adveng_building_food_3:0 "Bio-Replication Complex"
+  adveng_building_food_3_desc:0 ""
 
-  adveng_building_food_2:0 "Bio-Replication Complex"
-  adveng_building_food_2_desc:0 ""
+  adveng_building_alloys_3:0 "Autonomous Fabricator Complex"
+  adveng_building_alloys_3_desc:0 ""
 
-  adveng_building_alloys_2:0 "Autonomous Fabricator Complex"
-  adveng_building_alloys_2_desc:0 ""
+  adveng_building_CG_3:0 "Auto-Factory Complex"
+  adveng_building_CG_3_desc:0 ""
 
-  adveng_building_CG_2:0 "Auto-Factory Complex"
-  adveng_building_CG_2_desc:0 ""
+  adveng_building_tech_3:0 "Advanced Research Facilities"
+  adveng_building_tech_3_desc:0 ""
 
-  adveng_building_tech_2:0 "Advanced Research Facilities"
-  adveng_building_tech_2_desc:0 ""
+  adveng_building_housing_3:0 "Advanced Dome Complex"
+  adveng_building_housing_3_desc:0 ""
 
-  adveng_building_housing_2:0 "Advanced Dome Complex"
-  adveng_building_housing_2_desc:0 ""
+  adveng_building_unity_3:0 "Psychic Transmission Array"
+  adveng_building_unity_3_desc:0 ""
 
-  adveng_building_unity_2:0 "Psychic Transmission Array"
-  adveng_building_unity_2_desc:0 ""
-
-  adveng_building_refinery_2:0 "Auto-Refinery Hub"
-  adveng_building_refinery_2_desc:0 ""
+  adveng_building_refinery_3:0 "Auto-Refinery Hub"
+  adveng_building_refinery_3_desc:0 ""
 
   #T2 compat

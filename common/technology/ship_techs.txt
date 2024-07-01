@@ -5,8 +5,8 @@ adveng_tech_corvette_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_corvette_hull_2
 		tech_torpedoes_1
 	}
@@ -23,8 +23,8 @@ adveng_tech_corvette_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_corvette_1
 	}
 	weight = @adveng_t2_tech_weight_high
@@ -41,8 +41,8 @@ adveng_tech_destroyer_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_destroyer_hull_2
 	}
 	weight = @adveng_t1_tech_weight_high
@@ -58,8 +58,8 @@ adveng_tech_destroyer_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_destroyer_1
 	}
 	weight = @adveng_t2_tech_weight_high
@@ -77,8 +77,8 @@ adveng_tech_cruiser_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_cruiser_hull_2
 		tech_torpedoes_1
 	}
@@ -95,8 +95,8 @@ adveng_tech_cruiser_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_cruiser_1
 	}
 	weight = @adveng_t2_tech_weight_high
@@ -114,8 +114,8 @@ adveng_tech_battleship_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_battleship_hull_2
 		tech_energy_lance_1
 		tech_arc_emitter_1
@@ -134,8 +134,8 @@ adveng_tech_battleship_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_battleship_1
 	}
 	weight = @adveng_t2_tech_weight_high
@@ -153,8 +153,8 @@ adveng_tech_titan_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_titan_hull_2
 		tech_torpedoes_1
 	}
@@ -171,8 +171,8 @@ adveng_tech_titan_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_titan_1
 	}
 	weight = @adveng_t2_tech_weight_low
@@ -190,8 +190,8 @@ adveng_tech_juggernaut_1 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_1
-		adveng_tech_nanites_1
+		adveng_tech_dark_matter_2
+		
 		tech_juggernaut
 	}
 	weight = @adveng_t1_tech_weight_low
@@ -207,8 +207,8 @@ adveng_tech_juggernaut_2 = {
 	tier = 5
 	category = { voidcraft }
 	prerequisites = { 
-		adveng_tech_dark_matter_2
-		adveng_tech_nanites_2
+		adveng_tech_dark_matter_3
+		
 		adveng_tech_juggernaut_1
 	}
 	weight = @adveng_t2_tech_weight_low

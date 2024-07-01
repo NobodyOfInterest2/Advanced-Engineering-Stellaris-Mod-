@@ -1,0 +1,84 @@
+##T1
+adveng_tech_energy_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = physics
+	tier = 2
+	category = { field_manipulation }
+	prerequisites = { 
+		tech_power_hub_1
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+}
+
+adveng_tech_minerals_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { 
+		tech_mineral_purification_1
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+}
+
+adveng_tech_food_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = society
+	tier = 2
+	category = { biology }
+	prerequisites = { 
+		tech_food_processing_1
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+}
+
+adveng_tech_alloys_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { 
+		tech_alloys_1
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+}
+
+adveng_tech_cgs_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { 
+		tech_consumer_good_refinement_1
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+}
+
+adveng_tech_research_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = physics
+	tier = 2
+	category = { computing }
+	prerequisites = { 
+		tech_basic_science_lab_3 
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+ }
+
+adveng_tech_unity_1 = {
+	cost = @adveng_t1_tech_cost_medium
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { 
+		tech_galactic_bureaucracy
+	}
+	weight = @adveng_t1_tech_weight_medium
+
+ }

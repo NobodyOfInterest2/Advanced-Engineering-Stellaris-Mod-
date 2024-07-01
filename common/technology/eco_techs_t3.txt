@@ -1,0 +1,152 @@
+##T3
+adveng_tech_zro = {
+	cost = @adveng_t3_tech_cost_low
+	area = society
+	tier = 5
+	category = { psionics }
+	prerequisites = { 
+		adveng_tech_zro_theory
+	}
+	weight = @adveng_t3_tech_weight_high
+
+ }
+
+adveng_tech_dark_matter_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_dark_matter_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_energy_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_energy_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_minerals_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_minerals_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_food_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = society
+	tier = 5
+	category = { biology }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_food_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+}
+
+adveng_tech_alloys_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_alloys_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_cgs_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_cgs_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_research_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = physics
+	tier = 5
+	category = { computing }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_research_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_housing_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = society
+	tier = 5
+	category = { new_worlds }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_housing_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_unity_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = society
+	tier = 5
+	category = { statecraft }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_unity_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }
+
+adveng_tech_refinery_3 = {
+	cost = @adveng_t3_tech_cost_medium
+	area = engineering
+	tier = 5
+	category = { industry }
+	prerequisites = { 
+		adveng_tech_zro
+		
+		adveng_tech_refinery_2
+	}
+	weight = @adveng_t3_tech_weight_medium
+
+ }

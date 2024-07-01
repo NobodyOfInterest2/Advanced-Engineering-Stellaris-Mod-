@@ -1,11 +1,15 @@
 ##tech costs
-@adveng_t1_tech_cost_low = 24000
-@adveng_t1_tech_cost_medium = 30000
-@adveng_t1_tech_cost_high = 36000
+@adveng_t1_tech_cost_low = 4800
+@adveng_t1_tech_cost_medium = 6400
+@adveng_t1_tech_cost_high = 8000
 
-@adveng_t2_tech_cost_low = 48000
-@adveng_t2_tech_cost_medium = 60000
-@adveng_t2_tech_cost_high = 72000
+@adveng_t2_tech_cost_low = 24000
+@adveng_t2_tech_cost_medium = 32000
+@adveng_t2_tech_cost_high = 40000
+
+@adveng_t3_tech_cost_low = 36000
+@adveng_t3_tech_cost_medium = 48000
+@adveng_t3_tech_cost_high = 60000
 
 @adveng_t1_tech_weight_low = 25
 @adveng_t1_tech_weight_medium = 40
@@ -14,6 +18,10 @@
 @adveng_t2_tech_weight_low = 20
 @adveng_t2_tech_weight_medium = 30
 @adveng_t2_tech_weight_high = 40
+
+@adveng_t3_tech_weight_low = 20
+@adveng_t3_tech_weight_medium = 30
+@adveng_t3_tech_weight_high = 40
 
 @adveng_tech_weight_field_bonus = 1.25
 @adveng_tech_weight_bonus_low = 0.1
