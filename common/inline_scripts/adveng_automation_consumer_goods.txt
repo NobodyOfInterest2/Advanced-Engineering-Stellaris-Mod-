@@ -1,4 +1,2 @@
-produces = {
 	consumer_goods = 1
 	multiplier = value:adveng_resource_automation|BASE|$base$|ECONOMIC_CATEGORY|artisans|RESOURCE|consumer_goods|COUNT|$count$|
-}

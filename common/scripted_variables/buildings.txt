@@ -7,6 +7,11 @@
 @adveng_t2_cost_alloys = 180
 @adveng_t3_cost_alloys = 270
 
+@adveng_t1_cost_sr = 50
+@adveng_t2_cost_sr = 100
+@adveng_t3_cost_sr = 200
+@adveng_t4_cost_sr = 400
+
 ##upkeeps
 @adveng_t1_upkeep_energy = 4
 @adveng_t2_upkeep_energy = 8
@@ -34,6 +39,11 @@
 
 @adveng_upkeep_dark_matter_sr = 5
 
+@adveng_t1_upkeep_sr = 1
+@adveng_t2_upkeep_sr = 2
+@adveng_t3_upkeep_sr = 4
+@adveng_t4_upkeep_sr = 8
+
 @adveng_t1_upkeep_dark_matter = 0
 @adveng_t2_upkeep_dark_matter = 1
 @adveng_t3_upkeep_dark_matter = 2
@@ -58,5 +68,8 @@
 @adveng_t1_bio_trophy_count = 15
 @adveng_t2_bio_trophy_count = 30
 @adveng_t3_bio_trophy_count = 30
+
+##wide buildings have 2 jobs moved to automation
+@adveng_wide_job_count = 4
 
 ##end variables

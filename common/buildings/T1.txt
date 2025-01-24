@@ -67,14 +67,18 @@ adveng_building_energy_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			exotic_gases = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
+			exotic_gases = @adveng_t1_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_energy
 			base = @adveng_energy_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -130,14 +134,18 @@ adveng_building_minerals_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			rare_crystals = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
+			rare_crystals = @adveng_t1_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_minerals
 			base = @adveng_mineral_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -193,14 +201,18 @@ adveng_building_food_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			volatile_motes = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
+			volatile_motes = @adveng_t1_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_food
 			base = @adveng_food_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -210,7 +222,6 @@ adveng_building_food_1 = {
 }
 
 ##Alloys
-
 adveng_building_alloys_1 = {
 	base_buildtime = @adveng_t1_build_time_complex
 
@@ -290,6 +301,7 @@ adveng_building_alloys_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			volatile_motes = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			trigger = {
@@ -299,6 +311,7 @@ adveng_building_alloys_1 = {
 			}
 			energy = @adveng_t1_upkeep_energy
 			minerals = @adveng_t1_upkeep_minerals
+			volatile_motes = @adveng_t1_upkeep_sr
 		}
 		upkeep = {
 			trigger = {
@@ -308,11 +321,14 @@ adveng_building_alloys_1 = {
 			}
 			energy = @adveng_t1_upkeep_energy
 			food = @adveng_t1_upkeep_food
+			volatile_motes = @adveng_t1_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_alloys
 			base = @adveng_alloys_output_machine
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -384,16 +400,20 @@ adveng_building_CG_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			rare_crystals = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			minerals = @adveng_t1_upkeep_minerals
 			energy = @adveng_t1_upkeep_energy
+			rare_crystals = @adveng_t1_upkeep_sr
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_consumer_goods
 			base = @adveng_CG_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -459,28 +479,36 @@ adveng_building_tech_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			exotic_gases = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
 			consumer_goods = @adveng_t1_upkeep_CGs
+			exotic_gases = @adveng_t1_upkeep_sr
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_physics
 			base = @adveng_tech_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_society
 			base = @adveng_tech_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_engineering
 			base = @adveng_tech_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -566,14 +594,18 @@ adveng_building_unity_1 = {
 		cost = {
 			minerals = @adveng_t1_cost_minerals
 			alloys = @adveng_t1_cost_alloys
+			rare_crystals = @adveng_t1_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t1_upkeep_energy
+			rare_crystals = @adveng_t1_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_unity
 			base = @adveng_unity_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 

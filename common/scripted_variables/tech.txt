@@ -11,6 +11,8 @@
 @adveng_t3_tech_cost_medium = 48000
 @adveng_t3_tech_cost_high = 60000
 
+@adveng_not_rollable = 0
+
 @adveng_t1_tech_weight_low = 25
 @adveng_t1_tech_weight_medium = 40
 @adveng_t1_tech_weight_high = 55
@@ -27,5 +29,7 @@
 @adveng_tech_weight_bonus_low = 0.1
 @adveng_tech_weight_bonus_medium = 1.3
 @adveng_tech_weight_bonus_high = 1.5
+
+
 
 ##end tech variables

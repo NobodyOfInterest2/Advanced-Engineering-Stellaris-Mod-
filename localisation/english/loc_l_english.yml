@@ -219,42 +219,50 @@
   adveng_tech_refinery_3:0 "Aetherophasic Refinery Hubs"
   adveng_tech_refinery_3_desc:0 ""
 
+  #T4
+  adveng_tech_t4_wide:0 "Improved Automation"
+  adveng_tech_t4_wide_desc:0 ""
+
+  adveng_tech_t4_tall:0 "Production Centralization"
+  adveng_tech_t4_tall_desc:0 ""
+
+
   #Ship techs
-  adveng_tech_corvette_1:0 "Corvette Augmentation 1"
-  adveng_tech_corvette_1_desc:0 ""
+  adveng_tech_corvette_1:0 "Corvette Improvement"
+  adveng_tech_corvette_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Corvettes."
 
-  adveng_tech_destroyer_1:0 "Destroyer Augmentation 1"
-  adveng_tech_destroyer_1_desc:0 ""
+  adveng_tech_destroyer_1:0 "Destroyer Improvement"
+  adveng_tech_destroyer_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Destroyers."
 
-  adveng_tech_cruiser_1:0 "Cruiser Augmentation 1"
-  adveng_tech_cruiser_1_desc:0 ""
+  adveng_tech_cruiser_1:0 "Cruiser Improvement"
+  adveng_tech_cruiser_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Cruisers."
 
-  adveng_tech_battleship_1:0 "Battleship Augmentation 1"
-  adveng_tech_battleship_1_desc:0 ""
+  adveng_tech_battleship_1:0 "Battleship Improvement"
+  adveng_tech_battleship_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Battleships."
 
-  adveng_tech_titan_1:0 "Titan Augmentation 1"
-  adveng_tech_titan_1_desc:0 ""
+  adveng_tech_titan_1:0 "Titan Improvement"
+  adveng_tech_titan_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Titans."
 
-  adveng_tech_juggernaut_1:0 "Juggernaut Augmentation 1"
-  adveng_tech_juggernaut_1_desc:0 ""
+  adveng_tech_juggernaut_1:0 "Juggernaut Improvement"
+  adveng_tech_juggernaut_1_desc:0 "With the advent of dark matter technology, we have managed to improve the structure of our Juggernaut."
 
-  adveng_tech_corvette_2:0 "Corvette Augmentation 2"
-  adveng_tech_corvette_2_desc:0 ""
+  adveng_tech_corvette_2:0 "Corvette Augmentation"
+  adveng_tech_corvette_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Corvette Designs."
 
-  adveng_tech_destroyer_2:0 "Destroyer Augmentation 2"
-  adveng_tech_destroyer_2_desc:0 ""
+  adveng_tech_destroyer_2:0 "Destroyer Augmentation"
+  adveng_tech_destroyer_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Destroyer Designs."
 
-  adveng_tech_cruiser_2:0 "Cruiser Augmentation 2"
-  adveng_tech_cruiser_2_desc:0 ""
+  adveng_tech_cruiser_2:0 "Cruiser Augmentation"
+  adveng_tech_cruiser_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Cruiser Designs."
 
-  adveng_tech_battleship_2:0 "Battleship Augmentation 2"
-  adveng_tech_battleship_2_desc:0 ""
+  adveng_tech_battleship_2:0 "Battleship Augmentation"
+  adveng_tech_battleship_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Battleship Designs."
 
-  adveng_tech_titan_2:0 "Titan Augmentation 2"
-  adveng_tech_titan_2_desc:0 ""
+  adveng_tech_titan_2:0 "Titan Augmentation"
+  adveng_tech_titan_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Titan Designs."
 
-  adveng_tech_juggernaut_2:0 "Juggernaut Augmentation 2"
-  adveng_tech_juggernaut_2_desc:0 ""
+  adveng_tech_juggernaut_2:0 "Juggernaut Augmentation"
+  adveng_tech_juggernaut_2_desc:0 "Aetherophasic technology has enabled us to further improve on our Juggernaut."
 
   #Misc techs
   adveng_tech_army_1:0 "Advanced Army Supplies"
@@ -357,4 +365,53 @@
   adveng_building_refinery_3:0 "Auto-Refinery Hub"
   adveng_building_refinery_3_desc:0 ""
 
-  #T2 compat
+  #T4
+  adveng_building_dark_matter_4:0 "Dark Matter Hypercondenser"
+  adveng_building_dark_matter_4_desc:0 ""
+
+  adveng_building_zro_4:0 "Aetherophasic Hypercondenser"
+  adveng_building_zro_4_desc:0 ""
+
+  adveng_building_energy_4:0 "Shroud Tunnel Power Grid"
+  adveng_building_energy_4_desc:0 ""
+
+  adveng_building_minerals_4:0 "Matter Converter Hub"
+  adveng_building_minerals_4_desc:0 ""
+
+  adveng_building_food_4:0 "Hyper Processing Plant"
+  adveng_building_food_4_desc:0 ""
+
+  adveng_building_alloys_4:0 "Auto Forge"
+  adveng_building_alloys_4_desc:0 ""
+
+  adveng_building_CG_4:0 "Factory Synchronizer"
+  adveng_building_CG_4_desc:0 ""
+
+  adveng_building_tech_4:0 "Supercomputing Coordination Facility"
+  adveng_building_tech_4_desc:0 ""
+
+  adveng_building_unity_4:0 "Shroud Broadcaster"
+  adveng_building_unity_4_desc:0 ""
+
+  adveng_building_refinery_4:0 "Refinery Management Hub"
+  adveng_building_refinery_4_desc:0 ""
+
+  #Events
+  adveng_specialization.2.name:0 "Increasing Efficiency"
+  adveng_specialization.2.desc:0 "We might be able to squeeze some more output out of our current infrastructure. Our research efforts have found two ways we can improve our infrastructure. The first idea is to improve our current infrastructure to reduce the personel needed to operate it. This would increase performance by approximately 16%, but it fails to significantly improve the performance of industry on our more developed worlds. Alternatively, we could use specialized hubs to improve the performance of our more developed worlds. This would vastly improve the performance of our more developed worlds, but the amount of data these centers would need to function would excaberate any problems that our communications already have."
+  go_wide:0 "Improve our automation."
+  go_tall:0 "Increase the efficiency of what we have."
+
+  adveng_specialization.3.name:0 "Success"
+  adveng_specialization.3.desc:0 "We have finished conceptualizing improvements to our automation. Some time and additional research will be needed to refine the idea into something usable."
+
+  adveng_specialization.4.name:0 "Success"
+  adveng_specialization.4.desc:0 "We have finished conceptualizing the centralized industrial hubs. Some time and additional research will be needed to refine the idea into something usable."
+
+  #Special Projects
+  ADVENG_T4_ADVANCEMENT_WIDE:0 "Automated Design Improvements"
+  ADVENG_T4_ADVANCEMENT_WIDE_desc:0 "Our scientists need time to improve on our current designs."
+
+  ADVENG_T4_ADVANCEMENT_TALL:0 "Production Efficiency Improvements"
+  ADVENG_T4_ADVANCEMENT_TALL_desc:0 "Our scientists need time to improve the efficiency of our production lines."
+

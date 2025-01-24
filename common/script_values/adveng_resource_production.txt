@@ -1,10 +1,8 @@
 ##base production, base production addition
 adveng_resource_automation = {
 	base = $BASE$
-	##[[!BASE_VALUE]
-	##	add = $BASE$
-	##]
-	##[resource] from [job] (base)
+	##[resource] from [job] (+x)
+	##ex: alloy nano plants adding +2 base alloys to metallurgists 
 	complex_trigger_modifier = {
 		trigger = check_modifier_value
 		parameters = {

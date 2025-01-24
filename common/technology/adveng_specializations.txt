@@ -1,0 +1,17 @@
+##Tall
+adveng_tech_t4_tall = {
+	cost = @adveng_t2_tech_cost_medium
+	area = society
+	tier = 5
+	category = { statecraft }
+	weight = @adveng_not_rollable
+}
+
+##Wide
+adveng_tech_t4_wide = {
+	cost = @adveng_t2_tech_cost_medium
+	area = society
+	tier = 5
+	category = { statecraft }
+	weight = @adveng_not_rollable
+}

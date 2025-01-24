@@ -1,0 +1,11 @@
+#this = planet
+on_building_complete = {
+	events = {
+		adveng_specialization.1
+	}
+}
+on_building_upgraded = {
+	events = {
+		adveng_specialization.1
+	}
+}

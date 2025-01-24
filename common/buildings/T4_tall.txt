@@ -1,0 +1,731 @@
+##resource reference block
+##minerals: minerals
+##energy: energy
+##food: food
+##alloys alloys
+##consumer goods: consumer_goods
+##physics/society/engineering research: [physics/society/engineering]_research
+##unity: unity
+##influence: influence
+##exotic gases: exotic_gases
+##volatile motes: volatile_motes
+##rare crystals: rare_crystals
+##zro: sr_zro
+##dark matter: sr_dark_matter
+
+
+##Dark Matter
+
+adveng_building_dark_matter_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	planet_modifier = {
+		planet_technician_sr_dark_matter_produces_add = 0.2
+		planet_technician_minerals_upkeep_add = 0.4
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			rare_crystals = @adveng_t4_cost_sr
+			volatile_motes = @adveng_t4_cost_sr
+			exotic_gases = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy_sr
+			sr_zro = @adveng_t3_upkeep_zro
+			rare_crystals = @adveng_t4_upkeep_sr
+			volatile_motes = @adveng_t4_upkeep_sr
+			exotic_gases = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_dark_matter
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_dark_matter_3
+		adveng_tech_t4_tall
+	}
+}
+
+##Energy
+adveng_building_energy_4 = {
+	base_buildtime = @adveng_t3_build_time_simple
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_technician_energy_produces_add = 1
+		planet_technician_minerals_upkeep_add = 0.1
+		multiplier = value:adveng_tall_base
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_technician_produces_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			exotic_gases = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			sr_zro = @adveng_t3_upkeep_zro
+			energy = @adveng_t3_upkeep_energy
+			exotic_gases = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_energy
+			base = @adveng_energy_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = adveng_tech_t4_wide
+				}
+			}
+			inline_script = {
+			script = adveng_automation_energy
+			base = @adveng_energy_output_base
+			count = @adveng_wide_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_energy_3
+		adveng_tech_t4_tall
+	}
+}
+
+##Minerals
+
+adveng_building_minerals_4 = {
+	base_buildtime = @adveng_t3_build_time_simple
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_miners_minerals_produces_add = 1
+		planet_miners_energy_upkeep_add = 0.1
+		multiplier = value:adveng_tall_base
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_miners_produces_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			rare_crystals = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+			rare_crystals = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_minerals
+			base = @adveng_mineral_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_minerals_3
+		adveng_tech_t4_tall
+	}
+}
+
+##food
+
+adveng_building_food_4 = {
+	base_buildtime = @adveng_t3_build_time_simple
+	base_cap_amount = 1
+	can_build = yes
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+	}
+
+	#base modifiers
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_farmers_food_produces_add = 1
+		planet_farmers_energy_upkeep_add = 0.1
+		multiplier = value:adveng_tall_base
+	}
+
+	#percentile modifiers
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_farmers_food_produces_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			volatile_motes = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+			volatile_motes = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_food
+			base = @adveng_food_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_food_3
+		adveng_tech_t4_tall
+	}
+}
+
+##Alloys
+adveng_building_alloys_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	#percent modifiers
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_metallurgists_alloys_produces_mult = 0.01
+		planet_metallurgists_upkeep_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	#normal base modifiers
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_catalytic_empire = no
+			}
+		}
+		planet_metallurgists_alloys_produces_add = 1
+		planet_metallurgists_minerals_upkeep_add = 1
+		multiplier = value:adveng_tall_base
+	}
+	#catalytic base modifiers
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_catalytic_empire = yes
+			}
+		}
+		planet_metallurgists_alloys_produces_add = 1
+		planet_metallurgists_food_upkeep_add = 2
+		multiplier = value:adveng_tall_base
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			volatile_motes = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			minerals = @adveng_t3_upkeep_minerals
+			sr_zro = @adveng_t3_upkeep_zro
+			volatile_motes = @adveng_t4_upkeep_sr
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			food = @adveng_t3_upkeep_food
+			sr_zro = @adveng_t3_upkeep_zro
+			volatile_motes = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_alloys
+			base = @adveng_alloys_output_machine
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_alloys_3
+		adveng_tech_t4_tall
+	}
+}
+
+##CGs
+
+adveng_building_CG_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	potential = {
+		exists = owner
+	}
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_artisans_consumer_goods_produces_add = 1
+		planet_artisans_minerals_upkeep_add = 2
+		multiplier = value:adveng_tall_base
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_artisans_produces_mult = 0.01
+		planet_artisans_upkeep_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			rare_crystals = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			minerals = @adveng_t3_upkeep_minerals
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+			rare_crystals = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_consumer_goods
+			base = @adveng_CG_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_cgs_3
+		adveng_tech_t4_tall
+	}
+}
+
+##Research
+
+adveng_building_tech_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_researchers_physics_research_produces_add = 0.5
+		multiplier = value:adveng_tall_base
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_researchers_society_research_produces_add = 0.5
+		multiplier = value:adveng_tall_base
+	}
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_researchers_engineering_research_produces_add = 0.5
+		multiplier = value:adveng_tall_base
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		planet_researchers_minerals_upkeep_add = 2
+		multiplier = value:adveng_tall_base
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				is_hive_empire = no
+			}
+		}
+		planet_researchers_energy_upkeep_add = 2
+		multiplier = value:adveng_tall_base
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}	
+		planet_researchers_produces_mult = 0.01
+		planet_researchers_upkeep_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			exotic_gases = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+			exotic_gases = @adveng_t4_upkeep_sr
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_machine_empire = yes
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+		}		
+		upkeep = {
+			trigger = {
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			minerals = @adveng_t3_upkeep_minerals
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_machine_empire = no
+					is_hive_empire = no
+				}
+			}
+			consumer_goods = @adveng_t3_upkeep_CGs
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_tech_physics
+			base = @adveng_tech_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_tech_society
+			base = @adveng_tech_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_tech_engineering
+			base = @adveng_tech_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_research_3
+		adveng_tech_t4_tall
+	}
+}
+
+##Strategic Resources
+
+adveng_building_refinery_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_refiners_produces_mult = 0.01
+		planet_translucers_produces_mult = 0.01
+		planet_chemists_produces_mult = 0.01
+		planet_refiners_upkeep_mult = 0.01
+		planet_translucers_upkeep_mult = 0.01
+		planet_chemists_upkeep_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = no
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			minerals = @adveng_t3_upkeep_minerals
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_catalytic_empire = yes
+				}
+			}
+			energy = @adveng_t3_upkeep_energy
+			food = @adveng_t3_upkeep_food
+			sr_zro = @adveng_t3_upkeep_zro
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_exotic_gas
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+		
+		produces = {
+			inline_script = {
+			script = adveng_automation_volatile_motes
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+		
+		produces = {
+			inline_script = {
+			script = adveng_automation_rare_crystals
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_refinery_3
+		adveng_tech_t4_tall
+	}	
+}
+
+##unity
+adveng_building_unity_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	can_build = yes
+
+	allow = {
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_administrators_unity_produces_add = 1
+		multiplier = value:adveng_tall_base
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_administrators_unity_produces_mult = 0.01
+		planet_administrators_upkeep_mult = 0.01
+		multiplier = value:adveng_tall_percent_output
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			rare_crystals = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy
+			sr_zro = @adveng_t3_upkeep_zro
+			rare_crystals = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_unity
+			base = @adveng_unity_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_unity_3
+		adveng_tech_t4_tall
+	}
+}
+
+##zro
+adveng_building_zro_4 = {
+	base_buildtime = @adveng_t3_build_time_complex
+	base_cap_amount = 1
+	category = manufacturing
+
+	allow = {
+	}
+
+	planet_modifier = {
+		planet_technician_sr_zro_produces_add = 0.2
+		planet_technician_sr_dark_matter_upkeep_add = 0.2
+	}
+
+	country_modifier = {
+		empire_size_penalty_mult = 0.05
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @adveng_t3_cost_minerals
+			alloys = @adveng_t3_cost_alloys
+			rare_crystals = @adveng_t4_cost_sr
+			exotic_gases = @adveng_t4_cost_sr
+			volatile_motes = @adveng_t4_cost_sr
+		}
+		upkeep = {
+			energy = @adveng_t3_upkeep_energy_sr
+			sr_dark_matter = @adveng_upkeep_dark_matter_sr
+			rare_crystals = @adveng_t4_upkeep_sr
+			volatile_motes = @adveng_t4_upkeep_sr
+			exotic_gases = @adveng_t4_upkeep_sr
+		}
+		produces = {
+			inline_script = {
+			script = adveng_automation_zro
+			base = @adveng_strategic_output_base
+			count = @adveng_t3_job_count
+			}
+		}
+	}
+
+	prerequisites = {
+		adveng_tech_zro
+		adveng_tech_t4_tall
+	}
+}

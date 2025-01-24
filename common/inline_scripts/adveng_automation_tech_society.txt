@@ -1,4 +1,2 @@
-produces = {
 	society_research = 1
 	multiplier = value:adveng_resource_automation|BASE|$base$|ECONOMIC_CATEGORY|researchers|RESOURCE|society_research|COUNT|$count$|
-}

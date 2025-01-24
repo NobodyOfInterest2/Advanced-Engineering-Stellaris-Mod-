@@ -9,6 +9,16 @@ adveng_tech_energy_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
+			}
+		}
+	}
 }
 
 adveng_tech_minerals_1 = {
@@ -21,6 +31,16 @@ adveng_tech_minerals_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
 }
 
 adveng_tech_food_1 = {
@@ -33,6 +53,16 @@ adveng_tech_food_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
 }
 
 adveng_tech_alloys_1 = {
@@ -45,6 +75,16 @@ adveng_tech_alloys_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_volatile_motes
+				has_technology = tech_volatile_motes
+				has_country_flag = has_market_access
+			}
+		}
+	}
 }
 
 adveng_tech_cgs_1 = {
@@ -57,6 +97,16 @@ adveng_tech_cgs_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
 }
 
 adveng_tech_research_1 = {
@@ -69,6 +119,16 @@ adveng_tech_research_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_exotic_gases
+				has_country_flag = has_market_access
+			}
+		}
+	}
  }
 
 adveng_tech_unity_1 = {
@@ -81,4 +141,14 @@ adveng_tech_unity_1 = {
 	}
 	weight = @adveng_t1_tech_weight_medium
 
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
  }

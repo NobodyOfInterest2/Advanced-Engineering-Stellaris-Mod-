@@ -1,0 +1,203 @@
+#How this is supposed to function:
+#1: Empire builds a building
+#2: event 1 fires 
+#2a: if the event has not already proceeded to the next step, check what techs they have researched
+#2b: by random chance scaling with how many of the T3 building techs they have researched, roll a random chance
+#2c: if none of them have been researched, the chance should be zero. if all have been researched, it should be nearly 100%
+#2d: fire event 2 after ~8 months
+#3: event 2 fires
+#3a: give the player 2 choices: tall or wide
+#3b: give special project depending on which was chosen
+#3c: on completion, give tech for T4
+
+namespace = adveng_specialization
+
+#start timer for planet specialization event
+event = {
+	id = adveng_specialization.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				owner = {
+					NOT = {
+						has_country_flag = adveng_T4_advancement
+					}
+				}
+			}		
+			random_list = {
+				#proceed
+				100 = {
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_minerals_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_energy_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_food_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_alloys_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_cgs_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_unity_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_refinery_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_research_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0.65
+						owner = {
+							NOT = {
+								has_technology = adveng_tech_housing_3
+							}
+						}
+					}
+					modifier = {
+						factor = 0
+						owner = {
+							NOR = {
+								has_technology = adveng_tech_minerals_3
+								has_technology = adveng_tech_energy_3
+								has_technology = adveng_tech_food_3
+								has_technology = adveng_tech_alloys_3
+								has_technology = adveng_tech_cgs_3
+								has_technology = adveng_tech_unity_3
+								has_technology = adveng_tech_refinery_3
+								has_technology = adveng_tech_research_3
+								has_technology = adveng_tech_housing_3
+							}
+						}
+					}
+					#fire next event in chain
+					#right now fire it early 
+					owner = { 
+						country_event = {
+							id = adveng_specialization.2
+							days = 60
+							random = 20
+						}
+						set_country_flag = adveng_T4_advancement
+					}
+				}
+				#do not proceed
+				1 = {
+
+				}
+			}
+		}
+	}
+}
+
+#make choice that gives special project
+event = {
+	id = adveng_specialization.2
+	title = adveng_specialization.2.name
+	desc = adveng_specialization.2.desc
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	option = {
+		name = go_wide
+		enable_special_project = {
+			name = ADVENG_T4_ADVANCEMENT_WIDE
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = go_tall
+		enable_special_project = {
+			name = ADVENG_T4_ADVANCEMENT_TALL
+		}
+	}
+}
+
+#make window that gives tech (wide)
+event = {
+	id = adveng_specialization.3
+	title = adveng_specialization.3.name
+	desc = adveng_specialization.3.desc
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_celebration
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		add_research_option = adveng_tech_t4_wide
+		add_tech_progress = {
+			tech = adveng_tech_t4_wide
+			progress = 0.1
+		}
+	}
+}
+
+#make window that gives tech (tall)
+event = {
+	id = adveng_specialization.4
+	title = adveng_specialization.4.name
+	desc = adveng_specialization.4.desc
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_celebration
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		add_research_option = adveng_tech_t4_tall
+		add_tech_progress = {
+			tech = adveng_tech_t4_tall
+			progress = 0.1
+		}
+	}
+}

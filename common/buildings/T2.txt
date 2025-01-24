@@ -38,15 +38,23 @@ adveng_building_dark_matter_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			rare_crystals = @adveng_t2_cost_sr
+			volatile_motes = @adveng_t2_cost_sr
+			exotic_gases = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy_sr
 			minerals = @adveng_t2_upkeep_minerals_sr
+			rare_crystals = @adveng_t2_upkeep_sr
+			volatile_motes = @adveng_t2_upkeep_sr
+			exotic_gases = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_dark_matter
 			base = @adveng_strategic_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -55,46 +63,7 @@ adveng_building_dark_matter_2 = {
 	}
 }
 
-##alloys
-adveng_building_alloys_2 = {
-	base_buildtime = @adveng_t2_build_time_complex
-
-	potential = {
-		exists = owner
-	}
-
-	allow = {
-	}
-
-	upgrades = {
-		"adveng_building_alloys_3"
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = @adveng_t2_cost_minerals
-			alloys = @adveng_t2_cost_alloys
-		}
-		upkeep = {
-			energy = @adveng_t2_upkeep_energy_sr
-			minerals = @adveng_t2_upkeep_minerals_sr
-			sr_dark_matter = @adveng_t2_upkeep_dark_matter
-		}
-		inline_script = {
-			script = adveng_automation_alloys
-			base = @adveng_strategic_output_base
-			count = @adveng_t2_job_count
-		}
-	}
-
-	prerequisites = {
-		adveng_tech_alloys_2
-	}
-}
-
 ##Energy
-
 adveng_building_energy_2 = {
 	base_buildtime = @adveng_t2_build_time_simple
 
@@ -138,14 +107,19 @@ adveng_building_energy_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			exotic_gases = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			energy = @adveng_t2_upkeep_energy
+			exotic_gases = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_energy
 			base = @adveng_energy_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -201,15 +175,19 @@ adveng_building_minerals_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			rare_crystals = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			rare_crystals = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_minerals
 			base = @adveng_mineral_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -263,15 +241,19 @@ adveng_building_food_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			volatile_motes = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			volatile_motes = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_food
 			base = @adveng_food_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -281,7 +263,6 @@ adveng_building_food_2 = {
 }
 
 ##Alloys
-
 adveng_building_alloys_2 = {
 	base_buildtime = @adveng_t2_build_time_complex
 
@@ -359,6 +340,7 @@ adveng_building_alloys_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			volatile_motes = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			trigger = {
@@ -369,6 +351,7 @@ adveng_building_alloys_2 = {
 			energy = @adveng_t2_upkeep_energy
 			minerals = @adveng_t2_upkeep_minerals
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			volatile_motes = @adveng_t2_upkeep_sr
 		}
 		upkeep = {
 			trigger = {
@@ -379,11 +362,14 @@ adveng_building_alloys_2 = {
 			energy = @adveng_t2_upkeep_energy
 			food = @adveng_t2_upkeep_food
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			volatile_motes = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_alloys
 			base = @adveng_alloys_output_machine
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -453,17 +439,21 @@ adveng_building_CG_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			rare_crystals = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			minerals = @adveng_t2_upkeep_minerals
 			energy = @adveng_t2_upkeep_energy
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			rare_crystals = @adveng_t2_upkeep_sr
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_consumer_goods
 			base = @adveng_CG_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -527,29 +517,37 @@ adveng_building_tech_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			exotic_gases = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy
 			consumer_goods = @adveng_t2_upkeep_CGs
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			exotic_gases = @adveng_t2_upkeep_sr
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_physics
 			base = @adveng_tech_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_society
 			base = @adveng_tech_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_tech_engineering
 			base = @adveng_tech_output_base
 			count = @adveng_t2_job_count
+			}
 		}
 	}
 
@@ -572,12 +570,6 @@ adveng_building_refinery_2 = {
 
 	upgrades = {
 		"adveng_building_refinery_3"
-	}
-
-	planet_modifier = {
-		planet_refiners_produces_mult = 0.1
-		planet_translucers_produces_mult = 0.1
-		planet_chemists_produces_mult = 0.1
 	}
 
 	resources = {
@@ -606,22 +598,28 @@ adveng_building_refinery_2 = {
 			food = @adveng_t2_upkeep_food
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_exotic_gas
 			base = @adveng_strategic_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_volatile_motes
 			base = @adveng_strategic_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 		
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_rare_crystals
 			base = @adveng_strategic_output_base
 			count = @adveng_t1_job_count
+			}
 		}
 	}
 
@@ -658,10 +656,12 @@ adveng_building_housing_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			exotic_gases = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			exotic_gases = @adveng_t2_upkeep_sr
 		}
 	}
 	prerequisites = {
@@ -677,6 +677,9 @@ adveng_building_unity_2 = {
 
 	potential = {
 		exists = owner
+	}
+	prerequisites = {
+		adveng_tech_unity_2
 	}
 
 	allow = {
@@ -744,19 +747,21 @@ adveng_building_unity_2 = {
 		cost = {
 			minerals = @adveng_t2_cost_minerals
 			alloys = @adveng_t2_cost_alloys
+			rare_crystals = @adveng_t2_cost_sr
 		}
 		upkeep = {
 			energy = @adveng_t2_upkeep_energy
 			sr_dark_matter = @adveng_t2_upkeep_dark_matter
+			rare_crystals = @adveng_t2_upkeep_sr
 		}
-		inline_script = {
+		produces = {
+			inline_script = {
 			script = adveng_automation_unity
 			base = @adveng_unity_output_base
 			count = @adveng_t2_job_count
+			condition = { always = yes }
+			}
 		}
 	}
 
-	prerequisites = {
-		adveng_tech_unity_2
-	}
 }
